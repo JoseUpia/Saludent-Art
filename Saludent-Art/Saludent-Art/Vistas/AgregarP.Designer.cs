@@ -35,9 +35,9 @@ namespace Saludent_Art
             System.Windows.Forms.Label generoLabel;
             System.Windows.Forms.Label telefonoLabel;
             System.Windows.Forms.Label fechaEntradaLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgregarP));
             System.Windows.Forms.Label label1;
             System.Windows.Forms.Label direccionLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgregarP));
             this.nombreTextBox = new System.Windows.Forms.TextBox();
             this.apellidoTextBox = new System.Windows.Forms.TextBox();
             this.edadTextBox = new System.Windows.Forms.TextBox();
@@ -45,11 +45,11 @@ namespace Saludent_Art
             this.telefonoTextBox = new System.Windows.Forms.TextBox();
             this.fechaEntradaDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.guardar = new System.Windows.Forms.Button();
+            this.direccionTextBox = new System.Windows.Forms.TextBox();
+            this.correoTextBox = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.correoTextBox = new System.Windows.Forms.TextBox();
-            this.direccionTextBox = new System.Windows.Forms.TextBox();
-            this.guardar = new System.Windows.Forms.Button();
             nombreLabel = new System.Windows.Forms.Label();
             apellidoLabel = new System.Windows.Forms.Label();
             edadLabel = new System.Windows.Forms.Label();
@@ -141,6 +141,32 @@ namespace Saludent_Art
             fechaEntradaLabel.TabIndex = 14;
             fechaEntradaLabel.Text = "Fecha Entrada:";
             // 
+            // label1
+            // 
+            label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            label1.AutoSize = true;
+            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            label1.ForeColor = System.Drawing.Color.Black;
+            label1.Location = new System.Drawing.Point(48, 205);
+            label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(78, 25);
+            label1.TabIndex = 33;
+            label1.Text = "Correo:";
+            // 
+            // direccionLabel
+            // 
+            direccionLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            direccionLabel.AutoSize = true;
+            direccionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            direccionLabel.ForeColor = System.Drawing.Color.Black;
+            direccionLabel.Location = new System.Drawing.Point(596, 205);
+            direccionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            direccionLabel.Name = "direccionLabel";
+            direccionLabel.Size = new System.Drawing.Size(99, 25);
+            direccionLabel.TabIndex = 35;
+            direccionLabel.Text = "Direccion:";
+            // 
             // nombreTextBox
             // 
             this.nombreTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -226,73 +252,6 @@ namespace Saludent_Art
             this.panel1.Size = new System.Drawing.Size(1046, 439);
             this.panel1.TabIndex = 21;
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1125, 220);
-            this.panel2.TabIndex = 22;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(190, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(745, 206);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            label1.AutoSize = true;
-            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            label1.ForeColor = System.Drawing.Color.Black;
-            label1.Location = new System.Drawing.Point(48, 205);
-            label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(78, 25);
-            label1.TabIndex = 33;
-            label1.Text = "Correo:";
-            // 
-            // correoTextBox
-            // 
-            this.correoTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.correoTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.correoTextBox.Location = new System.Drawing.Point(194, 200);
-            this.correoTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.correoTextBox.Name = "correoTextBox";
-            this.correoTextBox.Size = new System.Drawing.Size(298, 30);
-            this.correoTextBox.TabIndex = 34;
-            // 
-            // direccionLabel
-            // 
-            direccionLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            direccionLabel.AutoSize = true;
-            direccionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            direccionLabel.ForeColor = System.Drawing.Color.Black;
-            direccionLabel.Location = new System.Drawing.Point(596, 205);
-            direccionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            direccionLabel.Name = "direccionLabel";
-            direccionLabel.Size = new System.Drawing.Size(99, 25);
-            direccionLabel.TabIndex = 35;
-            direccionLabel.Text = "Direccion:";
-            // 
-            // direccionTextBox
-            // 
-            this.direccionTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.direccionTextBox.Location = new System.Drawing.Point(716, 200);
-            this.direccionTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.direccionTextBox.Multiline = true;
-            this.direccionTextBox.Name = "direccionTextBox";
-            this.direccionTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.direccionTextBox.Size = new System.Drawing.Size(298, 58);
-            this.direccionTextBox.TabIndex = 36;
-            // 
             // guardar
             // 
             this.guardar.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -312,6 +271,47 @@ namespace Saludent_Art
             this.guardar.Click += new System.EventHandler(this.guardar_Click);
             this.guardar.MouseLeave += new System.EventHandler(this.guardar_MouseLeave);
             this.guardar.MouseHover += new System.EventHandler(this.guardar_MouseHover);
+            // 
+            // direccionTextBox
+            // 
+            this.direccionTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.direccionTextBox.Location = new System.Drawing.Point(716, 200);
+            this.direccionTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.direccionTextBox.Multiline = true;
+            this.direccionTextBox.Name = "direccionTextBox";
+            this.direccionTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.direccionTextBox.Size = new System.Drawing.Size(298, 58);
+            this.direccionTextBox.TabIndex = 36;
+            // 
+            // correoTextBox
+            // 
+            this.correoTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.correoTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.correoTextBox.Location = new System.Drawing.Point(194, 200);
+            this.correoTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.correoTextBox.Name = "correoTextBox";
+            this.correoTextBox.Size = new System.Drawing.Size(298, 30);
+            this.correoTextBox.TabIndex = 34;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1125, 220);
+            this.panel2.TabIndex = 22;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(190, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(745, 206);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // AgregarP
             // 

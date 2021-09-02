@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using Saludent_Art.Modelos;
-using System.Windows.Forms;
 
 namespace Saludent_Art.Controladores
 {

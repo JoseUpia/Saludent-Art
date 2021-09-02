@@ -93,6 +93,7 @@ namespace Saludent_Art
         private void Limpiar()
         {
             IdPaciente = "";
+            txtPaciente.Clear();   
             nombreTextBox.Clear();
             apellidoTextBox.Clear();
             edadTextBox.Clear();
@@ -129,6 +130,9 @@ namespace Saludent_Art
                         MessageBox.Show("¡Eliminado Satisfactoriamente!", "Eliminado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Limpiar();
                         RefrescarPacientes();
+
+                        IdPaciente = pacientesDataGridView.CurrentRow.Cells[0].Value.ToString();
+                    
                     }
 
                 }

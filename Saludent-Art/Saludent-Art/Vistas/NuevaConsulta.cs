@@ -147,7 +147,7 @@ namespace Saludent_Art.Vistas
                     Respuestas = consultaController.Respuestas(SelecionarFormulario());
                     Respuestas = FormularioFinal(Respuestas);
                     consultaController.AgregarConsulta(txtIdPaciente.Text, Respuestas[0].ToString(), Respuestas[1].ToString(), Respuestas[2].ToString(), Respuestas[3].ToString(), Respuestas[4].ToString(), Respuestas[5].ToString(), Respuestas[6].ToString(), Respuestas[7].ToString(), Respuestas[8].ToString(), Respuestas[9].ToString(), Respuestas[10].ToString(), Respuestas[11].ToString(), Respuestas[12].ToString(), txtMotivoConsulta.Text);
-                    MessageBox.Show("¡Se agregó correctamente!", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    MessageBox.Show("¡Consulta agregada correctamente!", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                     Limpiar();
                 }
             }

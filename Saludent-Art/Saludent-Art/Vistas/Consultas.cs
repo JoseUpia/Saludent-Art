@@ -157,6 +157,7 @@ namespace Saludent_Art.Vistas
                         MessageBox.Show("¡Consulta eliminada satisfactoriamente!", "Eliminado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Limpiar();
                         RefrescarConsulta();
+                        IdDatos = consultasDataGridView.CurrentRow.Cells[0].Value.ToString();
                     }
 
                 }
@@ -186,7 +187,7 @@ namespace Saludent_Art.Vistas
                     Respuestas = consultaController.Respuestas(SelecionarCampos());
                     Respuestas = RespuestaFinal(Respuestas);
                     consultaController.ActualizarConsulta(IdDatos, Respuestas[0].ToString(), Respuestas[1].ToString(), Respuestas[2].ToString(), Respuestas[3].ToString(), Respuestas[4].ToString(), Respuestas[5].ToString(), Respuestas[6].ToString(), Respuestas[7].ToString(), Respuestas[8].ToString(), Respuestas[9].ToString(), Respuestas[10].ToString(), Respuestas[11].ToString(), Respuestas[12].ToString(), txtMotivoConsulta.Text);
-                    MessageBox.Show("¡Actualizado Correctamente!");
+                    MessageBox.Show("¡Actualizado Correctamente!", "Actualizado", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                     RefrescarConsulta();
                     Limpiar();
                 }

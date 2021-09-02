@@ -115,7 +115,7 @@ namespace Saludent_Art.Vistas
             this.panelBordeArriba.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBordeArriba.Location = new System.Drawing.Point(0, 0);
             this.panelBordeArriba.Name = "panelBordeArriba";
-            this.panelBordeArriba.Size = new System.Drawing.Size(1125, 60);
+            this.panelBordeArriba.Size = new System.Drawing.Size(1125, 47);
             this.panelBordeArriba.TabIndex = 3;
             // 
             // txtBuscar
@@ -149,26 +149,26 @@ namespace Saludent_Art.Vistas
             // panelBordeIzquierda
             // 
             this.panelBordeIzquierda.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelBordeIzquierda.Location = new System.Drawing.Point(0, 60);
+            this.panelBordeIzquierda.Location = new System.Drawing.Point(0, 47);
             this.panelBordeIzquierda.Name = "panelBordeIzquierda";
-            this.panelBordeIzquierda.Size = new System.Drawing.Size(15, 683);
+            this.panelBordeIzquierda.Size = new System.Drawing.Size(15, 696);
             this.panelBordeIzquierda.TabIndex = 7;
             // 
             // panelBordeDerecha
             // 
             this.panelBordeDerecha.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelBordeDerecha.Location = new System.Drawing.Point(1110, 60);
+            this.panelBordeDerecha.Location = new System.Drawing.Point(1110, 47);
             this.panelBordeDerecha.Name = "panelBordeDerecha";
-            this.panelBordeDerecha.Size = new System.Drawing.Size(15, 668);
+            this.panelBordeDerecha.Size = new System.Drawing.Size(15, 681);
             this.panelBordeDerecha.TabIndex = 9;
             // 
             // panelTablaDatosClinicos
             // 
             this.panelTablaDatosClinicos.Controls.Add(this.consultasDataGridView);
             this.panelTablaDatosClinicos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelTablaDatosClinicos.Location = new System.Drawing.Point(15, 60);
+            this.panelTablaDatosClinicos.Location = new System.Drawing.Point(15, 47);
             this.panelTablaDatosClinicos.Name = "panelTablaDatosClinicos";
-            this.panelTablaDatosClinicos.Size = new System.Drawing.Size(1095, 668);
+            this.panelTablaDatosClinicos.Size = new System.Drawing.Size(1095, 681);
             this.panelTablaDatosClinicos.TabIndex = 10;
             // 
             // consultasDataGridView
@@ -208,7 +208,7 @@ namespace Saludent_Art.Vistas
             this.consultasDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.consultasDataGridView.RowTemplate.Height = 24;
             this.consultasDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.consultasDataGridView.Size = new System.Drawing.Size(1095, 668);
+            this.consultasDataGridView.Size = new System.Drawing.Size(1095, 681);
             this.consultasDataGridView.TabIndex = 2;
             this.consultasDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.consultasDataGridView_CellClick);
             // 
@@ -264,7 +264,7 @@ namespace Saludent_Art.Vistas
             this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(74)))), ((int)(((byte)(86)))));
-            this.btnActualizar.Location = new System.Drawing.Point(753, 279);
+            this.btnActualizar.Location = new System.Drawing.Point(762, 279);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(126, 44);
             this.btnActualizar.TabIndex = 61;
