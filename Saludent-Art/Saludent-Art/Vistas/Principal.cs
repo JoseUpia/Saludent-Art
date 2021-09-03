@@ -181,5 +181,17 @@ namespace Saludent_Art
             ActivarBotone(sender);
             AbrirFormulario(new Consultas());
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            ActivarBotone(sender);
+            AbrirFormulario(new Factura());
+        }
+
+        private void Acumulado_Click(object sender, EventArgs e)
+        {
+            ActivarBotone(sender);
+            AbrirFormulario(new Acumulado());
+        }
     }
 }
