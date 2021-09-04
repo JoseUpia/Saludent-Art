@@ -73,6 +73,9 @@
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.6.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -288,6 +291,9 @@
       <DependentUpon>Saludent-Art.mdf</DependentUpon>
     </Content>
     <Content Include="Logo_Saludent-Art.ico" />
+    <Content Include="Resources\FacturaSaludent-Art.png" />
+    <None Include="Resources\FacturaSaludent-Art1.png" />
+    <None Include="Resources\FacturaSaludent-Art2.png" />
     <Content Include="Resources\Logo_Saludent-Art.ico" />
   </ItemGroup>
   <ItemGroup>
