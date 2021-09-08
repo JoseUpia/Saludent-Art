@@ -270,7 +270,7 @@ namespace Saludent_Art
             // 
             this.correoTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.correoTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.correoTextBox.Location = new System.Drawing.Point(173, 150);
+            this.correoTextBox.Location = new System.Drawing.Point(173, 152);
             this.correoTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.correoTextBox.Name = "correoTextBox";
             this.correoTextBox.Size = new System.Drawing.Size(298, 30);
@@ -279,7 +279,7 @@ namespace Saludent_Art
             // fechaEntradaDateTimePicker
             // 
             this.fechaEntradaDateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.fechaEntradaDateTimePicker.CustomFormat = "dd/mm/yyyy";
+            this.fechaEntradaDateTimePicker.CustomFormat = "dd/MMMM/yyyy";
             this.fechaEntradaDateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.fechaEntradaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.fechaEntradaDateTimePicker.Location = new System.Drawing.Point(695, 110);

@@ -32,12 +32,12 @@ namespace Saludent_Art
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.BarraSuperior = new System.Windows.Forms.Panel();
+            this.Minimizar = new System.Windows.Forms.PictureBox();
+            this.Restaurar = new System.Windows.Forms.PictureBox();
+            this.Maximizar = new System.Windows.Forms.PictureBox();
+            this.Cerrar = new System.Windows.Forms.PictureBox();
             this.BarraIzquierda = new System.Windows.Forms.Panel();
-            this.Logo = new System.Windows.Forms.Panel();
-            this.PanelCentral = new System.Windows.Forms.Panel();
-            this.Hora = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Acumulado = new FontAwesome.Sharp.IconButton();
             this.Facturar = new FontAwesome.Sharp.IconButton();
             this.Configuracion = new FontAwesome.Sharp.IconButton();
             this.Consultas = new FontAwesome.Sharp.IconButton();
@@ -45,22 +45,22 @@ namespace Saludent_Art
             this.EditarPaciente = new FontAwesome.Sharp.IconButton();
             this.RegistrarPaciente = new FontAwesome.Sharp.IconButton();
             this.NuevaConsulta = new FontAwesome.Sharp.IconButton();
+            this.Logo = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.Minimizar = new System.Windows.Forms.PictureBox();
-            this.Restaurar = new System.Windows.Forms.PictureBox();
-            this.Maximizar = new System.Windows.Forms.PictureBox();
-            this.Cerrar = new System.Windows.Forms.PictureBox();
-            this.Acumulado = new FontAwesome.Sharp.IconButton();
+            this.PanelCentral = new System.Windows.Forms.Panel();
+            this.Hora = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.BarraSuperior.SuspendLayout();
-            this.BarraIzquierda.SuspendLayout();
-            this.Logo.SuspendLayout();
-            this.PanelCentral.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Restaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Maximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cerrar)).BeginInit();
+            this.BarraIzquierda.SuspendLayout();
+            this.Logo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.PanelCentral.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // BarraSuperior
@@ -77,6 +77,59 @@ namespace Saludent_Art
             this.BarraSuperior.Size = new System.Drawing.Size(1434, 32);
             this.BarraSuperior.TabIndex = 4;
             this.BarraSuperior.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraSuperior_MouseDown);
+            // 
+            // Minimizar
+            // 
+            this.Minimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Minimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Minimizar.Image = ((System.Drawing.Image)(resources.GetObject("Minimizar.Image")));
+            this.Minimizar.Location = new System.Drawing.Point(1335, 4);
+            this.Minimizar.Name = "Minimizar";
+            this.Minimizar.Size = new System.Drawing.Size(25, 25);
+            this.Minimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Minimizar.TabIndex = 3;
+            this.Minimizar.TabStop = false;
+            this.Minimizar.Click += new System.EventHandler(this.Minimizar_Click);
+            // 
+            // Restaurar
+            // 
+            this.Restaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Restaurar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Restaurar.Image = ((System.Drawing.Image)(resources.GetObject("Restaurar.Image")));
+            this.Restaurar.Location = new System.Drawing.Point(1366, 4);
+            this.Restaurar.Name = "Restaurar";
+            this.Restaurar.Size = new System.Drawing.Size(25, 25);
+            this.Restaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Restaurar.TabIndex = 2;
+            this.Restaurar.TabStop = false;
+            this.Restaurar.Visible = false;
+            this.Restaurar.Click += new System.EventHandler(this.Restaurar_Click);
+            // 
+            // Maximizar
+            // 
+            this.Maximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Maximizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Maximizar.Image = ((System.Drawing.Image)(resources.GetObject("Maximizar.Image")));
+            this.Maximizar.Location = new System.Drawing.Point(1366, 4);
+            this.Maximizar.Name = "Maximizar";
+            this.Maximizar.Size = new System.Drawing.Size(25, 25);
+            this.Maximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Maximizar.TabIndex = 1;
+            this.Maximizar.TabStop = false;
+            this.Maximizar.Click += new System.EventHandler(this.Maximizar_Click);
+            // 
+            // Cerrar
+            // 
+            this.Cerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Cerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Cerrar.Image = ((System.Drawing.Image)(resources.GetObject("Cerrar.Image")));
+            this.Cerrar.Location = new System.Drawing.Point(1397, 4);
+            this.Cerrar.Name = "Cerrar";
+            this.Cerrar.Size = new System.Drawing.Size(25, 25);
+            this.Cerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Cerrar.TabIndex = 0;
+            this.Cerrar.TabStop = false;
+            this.Cerrar.Click += new System.EventHandler(this.Cerrar_Click);
             // 
             // BarraIzquierda
             // 
@@ -96,55 +149,30 @@ namespace Saludent_Art
             this.BarraIzquierda.Size = new System.Drawing.Size(291, 790);
             this.BarraIzquierda.TabIndex = 5;
             // 
-            // Logo
+            // Acumulado
             // 
-            this.Logo.Controls.Add(this.pictureBox2);
-            this.Logo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Logo.Location = new System.Drawing.Point(0, 0);
-            this.Logo.Name = "Logo";
-            this.Logo.Size = new System.Drawing.Size(291, 223);
-            this.Logo.TabIndex = 1;
-            // 
-            // PanelCentral
-            // 
-            this.PanelCentral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(227)))), ((int)(((byte)(231)))));
-            this.PanelCentral.Controls.Add(this.Hora);
-            this.PanelCentral.Controls.Add(this.pictureBox1);
-            this.PanelCentral.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelCentral.Location = new System.Drawing.Point(291, 32);
-            this.PanelCentral.Name = "PanelCentral";
-            this.PanelCentral.Size = new System.Drawing.Size(1143, 790);
-            this.PanelCentral.TabIndex = 6;
-            // 
-            // Hora
-            // 
-            this.Hora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Hora.Font = new System.Drawing.Font("Agency FB", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Hora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(111)))), ((int)(((byte)(130)))));
-            this.Hora.Location = new System.Drawing.Point(923, 0);
-            this.Hora.Margin = new System.Windows.Forms.Padding(0);
-            this.Hora.Name = "Hora";
-            this.Hora.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Hora.Size = new System.Drawing.Size(220, 60);
-            this.Hora.TabIndex = 1;
-            this.Hora.Text = "07:50:00 PM";
-            this.Hora.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(218, 183);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(773, 469);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.Acumulado.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Acumulado.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Acumulado.FlatAppearance.BorderSize = 0;
+            this.Acumulado.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(74)))), ((int)(((byte)(86)))));
+            this.Acumulado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(45)))), ((int)(((byte)(52)))));
+            this.Acumulado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Acumulado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Acumulado.ForeColor = System.Drawing.Color.White;
+            this.Acumulado.IconChar = FontAwesome.Sharp.IconChar.Coins;
+            this.Acumulado.IconColor = System.Drawing.Color.White;
+            this.Acumulado.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Acumulado.IconSize = 60;
+            this.Acumulado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Acumulado.Location = new System.Drawing.Point(0, 583);
+            this.Acumulado.Name = "Acumulado";
+            this.Acumulado.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.Acumulado.Size = new System.Drawing.Size(291, 60);
+            this.Acumulado.TabIndex = 10;
+            this.Acumulado.Text = "Acumulado";
+            this.Acumulado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Acumulado.UseVisualStyleBackColor = true;
+            this.Acumulado.Click += new System.EventHandler(this.Acumulado_Click);
             // 
             // Facturar
             // 
@@ -326,6 +354,15 @@ namespace Saludent_Art
             this.NuevaConsulta.Click += new System.EventHandler(this.NuevaConsulta_Click);
             this.NuevaConsulta.MouseHover += new System.EventHandler(this.iconButton5_MouseHover);
             // 
+            // Logo
+            // 
+            this.Logo.Controls.Add(this.pictureBox2);
+            this.Logo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Logo.Location = new System.Drawing.Point(0, 0);
+            this.Logo.Name = "Logo";
+            this.Logo.Size = new System.Drawing.Size(291, 223);
+            this.Logo.TabIndex = 1;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -340,83 +377,46 @@ namespace Saludent_Art
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // Minimizar
+            // PanelCentral
             // 
-            this.Minimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Minimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Minimizar.Image = ((System.Drawing.Image)(resources.GetObject("Minimizar.Image")));
-            this.Minimizar.Location = new System.Drawing.Point(1335, 4);
-            this.Minimizar.Name = "Minimizar";
-            this.Minimizar.Size = new System.Drawing.Size(25, 25);
-            this.Minimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Minimizar.TabIndex = 3;
-            this.Minimizar.TabStop = false;
-            this.Minimizar.Click += new System.EventHandler(this.Minimizar_Click);
+            this.PanelCentral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(227)))), ((int)(((byte)(231)))));
+            this.PanelCentral.Controls.Add(this.Hora);
+            this.PanelCentral.Controls.Add(this.pictureBox1);
+            this.PanelCentral.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelCentral.Location = new System.Drawing.Point(291, 32);
+            this.PanelCentral.Name = "PanelCentral";
+            this.PanelCentral.Size = new System.Drawing.Size(1143, 790);
+            this.PanelCentral.TabIndex = 6;
             // 
-            // Restaurar
+            // Hora
             // 
-            this.Restaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Restaurar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Restaurar.Image = ((System.Drawing.Image)(resources.GetObject("Restaurar.Image")));
-            this.Restaurar.Location = new System.Drawing.Point(1366, 4);
-            this.Restaurar.Name = "Restaurar";
-            this.Restaurar.Size = new System.Drawing.Size(25, 25);
-            this.Restaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Restaurar.TabIndex = 2;
-            this.Restaurar.TabStop = false;
-            this.Restaurar.Visible = false;
-            this.Restaurar.Click += new System.EventHandler(this.Restaurar_Click);
+            this.Hora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Hora.Font = new System.Drawing.Font("Agency FB", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Hora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(111)))), ((int)(((byte)(130)))));
+            this.Hora.Location = new System.Drawing.Point(923, 0);
+            this.Hora.Margin = new System.Windows.Forms.Padding(0);
+            this.Hora.Name = "Hora";
+            this.Hora.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Hora.Size = new System.Drawing.Size(220, 60);
+            this.Hora.TabIndex = 1;
+            this.Hora.Text = "07:50:00 PM";
+            this.Hora.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // Maximizar
+            // pictureBox1
             // 
-            this.Maximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Maximizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Maximizar.Image = ((System.Drawing.Image)(resources.GetObject("Maximizar.Image")));
-            this.Maximizar.Location = new System.Drawing.Point(1366, 4);
-            this.Maximizar.Name = "Maximizar";
-            this.Maximizar.Size = new System.Drawing.Size(25, 25);
-            this.Maximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Maximizar.TabIndex = 1;
-            this.Maximizar.TabStop = false;
-            this.Maximizar.Click += new System.EventHandler(this.Maximizar_Click);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(218, 183);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(773, 469);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
-            // Cerrar
+            // timer1
             // 
-            this.Cerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Cerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Cerrar.Image = ((System.Drawing.Image)(resources.GetObject("Cerrar.Image")));
-            this.Cerrar.Location = new System.Drawing.Point(1397, 4);
-            this.Cerrar.Name = "Cerrar";
-            this.Cerrar.Size = new System.Drawing.Size(25, 25);
-            this.Cerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Cerrar.TabIndex = 0;
-            this.Cerrar.TabStop = false;
-            this.Cerrar.Click += new System.EventHandler(this.Cerrar_Click);
-            // 
-            // Acumulado
-            // 
-            this.Acumulado.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Acumulado.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Acumulado.FlatAppearance.BorderSize = 0;
-            this.Acumulado.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(74)))), ((int)(((byte)(86)))));
-            this.Acumulado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(45)))), ((int)(((byte)(52)))));
-            this.Acumulado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Acumulado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Acumulado.ForeColor = System.Drawing.Color.White;
-            this.Acumulado.IconChar = FontAwesome.Sharp.IconChar.Coins;
-            this.Acumulado.IconColor = System.Drawing.Color.White;
-            this.Acumulado.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.Acumulado.IconSize = 60;
-            this.Acumulado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Acumulado.Location = new System.Drawing.Point(0, 583);
-            this.Acumulado.Name = "Acumulado";
-            this.Acumulado.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.Acumulado.Size = new System.Drawing.Size(291, 60);
-            this.Acumulado.TabIndex = 10;
-            this.Acumulado.Text = "Acumulado";
-            this.Acumulado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Acumulado.UseVisualStyleBackColor = true;
-            this.Acumulado.Click += new System.EventHandler(this.Acumulado_Click);
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Principal
             // 
@@ -434,15 +434,15 @@ namespace Saludent_Art
             this.Text = "Saludent-Art";
             this.Load += new System.EventHandler(this.Principal_Load);
             this.BarraSuperior.ResumeLayout(false);
-            this.BarraIzquierda.ResumeLayout(false);
-            this.Logo.ResumeLayout(false);
-            this.PanelCentral.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Restaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Maximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cerrar)).EndInit();
+            this.BarraIzquierda.ResumeLayout(false);
+            this.Logo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.PanelCentral.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

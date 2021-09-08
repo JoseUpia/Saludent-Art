@@ -29,6 +29,13 @@ namespace Saludent_Art
         private void MostrarPacientes()
         {
             pacientesDataGridView.DataSource = PacienteController.MostrarPacientes();
+            for (int i = 0; i < 9; i++)
+            {
+                if (i != 7)
+                {
+                    pacientesDataGridView.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+                }
+            }
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -54,16 +61,17 @@ namespace Saludent_Art
 
         private void pacientesDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            IdPaciente = pacientesDataGridView.CurrentRow.Cells["IdPaciente"].Value.ToString();
-            nombreTextBox.Text = pacientesDataGridView.CurrentRow.Cells["Nombre"].Value.ToString();
-            apellidoTextBox.Text = pacientesDataGridView.CurrentRow.Cells["Apellido"].Value.ToString();
-            edadTextBox.Text = pacientesDataGridView.CurrentRow.Cells["Edad"].Value.ToString();
-            generoComboBox.Text = pacientesDataGridView.CurrentRow.Cells["Genero"].Value.ToString();
-            correoTextBox.Text = pacientesDataGridView.CurrentRow.Cells["Correo"].Value.ToString();
-            telefonoTextBox.Text = pacientesDataGridView.CurrentRow.Cells["Telefono"].Value.ToString();
-            direccionTextBox.Text = pacientesDataGridView.CurrentRow.Cells["Direccion"].Value.ToString();
-            fechaEntradaDateTimePicker.Text = pacientesDataGridView.CurrentRow.Cells["FechaEntrada"].Value.ToString();
-            
+            IdPaciente = pacientesDataGridView.CurrentRow.Cells[0].Value.ToString();
+            nombreTextBox.Text = pacientesDataGridView.CurrentRow.Cells[1].Value.ToString();
+            apellidoTextBox.Text = pacientesDataGridView.CurrentRow.Cells[2].Value.ToString();
+            edadTextBox.Text = pacientesDataGridView.CurrentRow.Cells[3].Value.ToString();
+            generoComboBox.Text = pacientesDataGridView.CurrentRow.Cells[4].Value.ToString();
+            correoTextBox.Text = pacientesDataGridView.CurrentRow.Cells[5].Value.ToString();
+            telefonoTextBox.Text = pacientesDataGridView.CurrentRow.Cells[6].Value.ToString();
+            direccionTextBox.Text = pacientesDataGridView.CurrentRow.Cells[7].Value.ToString();
+            fechaEntradaDateTimePicker.Text = pacientesDataGridView.CurrentRow.Cells[8].Value.ToString();
+
+            txtPaciente.Text = "";
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)

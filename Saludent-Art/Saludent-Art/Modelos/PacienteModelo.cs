@@ -20,7 +20,7 @@ namespace Saludent_Art.Modelos
         public DataTable MostrarPacientes()
         {
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "SELECT * FROM Pacientes";
+            comando.CommandText = "SELECT IdPaciente AS 'ID', Nombre, Apellido, Edad, Genero, Correo, Telefono, Direccion, FechaEntrada AS 'Fecha de llegada' FROM Pacientes";
             comando.CommandType = CommandType.Text;
 
             leer = comando.ExecuteReader();
@@ -33,7 +33,8 @@ namespace Saludent_Art.Modelos
         public DataTable Filtrar(string buscar)
         {
             comando.Connection = conexion.AbrirConexion(); 
-            comando.CommandText = "SELECT * FROM Pacientes WHERE IdPaciente LIKE '" + buscar + "%'OR Nombre LIKE '" + buscar + "%' OR Apellido LIKE '" + buscar + "%' OR Edad LIKE '" + buscar + "%' OR Telefono LIKE '" + buscar + "%' OR Correo LIKE '" + buscar + "%'";
+            comando.CommandText = "SELECT IdPaciente AS 'ID', Nombre, Apellido, Edad, Genero, Correo, Telefono, Direccion, FechaEntrada AS 'Fecha de llegada' " +
+                "FROM Pacientes WHERE IdPaciente LIKE '" + buscar + "%'OR Nombre LIKE '" + buscar + "%' OR Apellido LIKE '" + buscar + "%' OR Edad LIKE '" + buscar + "%' OR Telefono LIKE '" + buscar + "%' OR Correo LIKE '" + buscar + "%'";
             comando.CommandType = CommandType.Text;
 
             leer = comando.ExecuteReader();

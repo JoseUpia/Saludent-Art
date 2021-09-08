@@ -19,7 +19,9 @@ namespace Saludent_Art.Modelos
         public DataTable MostrarConsultas()
         {
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "SELECT * FROM DatosClinicos";
+            comando.CommandText = "SELECT IdDatos AS ID, IdPaciente AS Paciente, MedicamentoAlergico AS P1, IntervencionQuirurgica AS P2, ConsumeMedicamento AS P3, ReacionesAnestecia AS P4," +
+                                  "ProblemasSangrado AS P5,PadeceDiabetes AS P6, HipertensionArterial AS P7, OtraEnfermedad AS P8, Embarazada AS P9, MolestiaBacal AS P10, " +
+                                  "MalOlor_MalSabor_Boca AS P11, DientesMoviles AS P12, HabitosPerniciosos AS P13, MotivoConsulta AS P14 FROM DatosClinicos";
             comando.CommandType = CommandType.Text;
 
             leer = comando.ExecuteReader();
@@ -31,7 +33,10 @@ namespace Saludent_Art.Modelos
         public DataTable Filtrar(string buscar)
         {
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "SELECT * FROM DatosClinicos D Join Pacientes P ON D.IdPaciente = P.IdPaciente WHERE D.IdPaciente LIKE '"+buscar+"%' OR P.Nombre LIKE '"+buscar+"%'";
+            comando.CommandText = "SELECT IdDatos AS ID, IdPaciente AS Paciente, MedicamentoAlergico AS P1, IntervencionQuirurgica AS P2, ConsumeMedicamento AS P3, ReacionesAnestecia AS P4,"+ 
+                                  "ProblemasSangrado AS P5,PadeceDiabetes AS P6, HipertensionArterial AS P7, OtraEnfermedad AS P8, Embarazada AS P9, MolestiaBacal AS P10, "+
+                                  "MalOlor_MalSabor_Boca AS P11, DientesMoviles AS P12, HabitosPerniciosos AS P13, MotivoConsulta AS P14 " +
+                                  "FROM DatosClinicos D Join Pacientes P ON D.IdPaciente = P.IdPaciente WHERE D.IdPaciente LIKE '"+buscar+"%' OR P.Nombre LIKE '"+buscar+"%'";
             comando.CommandType = CommandType.Text;
 
             leer = comando.ExecuteReader();

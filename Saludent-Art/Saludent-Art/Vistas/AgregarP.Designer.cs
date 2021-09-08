@@ -220,7 +220,7 @@ namespace Saludent_Art
             // fechaEntradaDateTimePicker
             // 
             this.fechaEntradaDateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.fechaEntradaDateTimePicker.CustomFormat = "dd/MM/yyyy";
+            this.fechaEntradaDateTimePicker.CustomFormat = "dd/MMMM/yyyy";
             this.fechaEntradaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.fechaEntradaDateTimePicker.Location = new System.Drawing.Point(716, 155);
             this.fechaEntradaDateTimePicker.Name = "fechaEntradaDateTimePicker";

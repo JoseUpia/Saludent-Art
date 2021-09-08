@@ -169,6 +169,8 @@ namespace Saludent_Art
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             FormularioActual.Close();
+            DisableButton();
+            BordeIzquierdo.Visible = false;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -191,7 +193,7 @@ namespace Saludent_Art
         private void Acumulado_Click(object sender, EventArgs e)
         {
             ActivarBotone(sender);
-            AbrirFormulario(new Acumulado());
+            AbrirFormulario(new GestionarFactura());
         }
     }
 }

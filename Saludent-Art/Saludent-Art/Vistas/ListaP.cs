@@ -27,14 +27,19 @@ namespace Saludent_Art
         private void ListaP_Load(object sender, EventArgs e)
         {
             MostrarPacientes();
-
+            for(int i = 0; i<9; i++)
+            {
+                if(i != 7)
+                {
+                    pacientesDataGridView.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+                }
+            }
         }
 
         public void Filtrar()
         {
             PacienteController Filtro = new PacienteController();
             pacientesDataGridView.DataSource = Filtro.Filtrar(txtBuscar.Text);
-            pacientesDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

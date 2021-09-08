@@ -91,6 +91,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
@@ -105,20 +106,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controladores\ConsultaController.cs" />
+    <Compile Include="Controladores\FacturaController.cs" />
     <Compile Include="Controladores\PacienteController.cs" />
+    <Compile Include="Controladores\ProcedimientoController.cs" />
     <Compile Include="Modelos\Conexion.cs" />
     <Compile Include="Modelos\ConsultaModelo.cs" />
+    <Compile Include="Modelos\FacturaModelo.cs" />
     <Compile Include="Modelos\PacienteModelo.cs" />
+    <Compile Include="Modelos\ProcedimientoModelo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\Acumulado.cs">
+    <Compile Include="Vistas\GestionarFactura.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\Acumulado.Designer.cs">
-      <DependentUpon>Acumulado.cs</DependentUpon>
+    <Compile Include="Vistas\GestionarFactura.Designer.cs">
+      <DependentUpon>GestionarFactura.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\AgregarP.cs">
       <SubType>Form</SubType>
@@ -170,8 +175,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Vistas\Acumulado.resx">
-      <DependentUpon>Acumulado.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\GestionarFactura.resx">
+      <DependentUpon>GestionarFactura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\AgregarP.resx">
       <DependentUpon>AgregarP.cs</DependentUpon>
@@ -292,8 +297,6 @@
     </Content>
     <Content Include="Logo_Saludent-Art.ico" />
     <Content Include="Resources\FacturaSaludent-Art.png" />
-    <None Include="Resources\FacturaSaludent-Art1.png" />
-    <None Include="Resources\FacturaSaludent-Art2.png" />
     <Content Include="Resources\Logo_Saludent-Art.ico" />
   </ItemGroup>
   <ItemGroup>

@@ -75,27 +75,7 @@ namespace Saludent_Art.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap FacturaSaludent_Art {
             get {
-                object obj = ResourceManager.GetObject("FacturaSaludent-Art", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap FacturaSaludent_Art1 {
-            get {
-                object obj = ResourceManager.GetObject("FacturaSaludent-Art1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap FacturaSaludent_Art2 {
-            get {
-                object obj = ResourceManager.GetObject("FacturaSaludent-Art2", resourceCulture);
+                object obj = ResourceManager.GetObject("FacturaSaludent_Art", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

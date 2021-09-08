@@ -34,8 +34,8 @@ namespace Saludent_Art.Vistas
             System.Windows.Forms.Label edadLabel;
             System.Windows.Forms.Label Total;
             System.Windows.Forms.Label fechaEntradaLabel;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Factura));
             this.CantidadTotal = new System.Windows.Forms.Label();
             this.ImprimirDocumento = new System.Drawing.Printing.PrintDocument();
@@ -51,12 +51,10 @@ namespace Saludent_Art.Vistas
             this.nombreTextBox = new System.Windows.Forms.TextBox();
             this.apellidoTextBox = new System.Windows.Forms.TextBox();
             this.edadTextBox = new System.Windows.Forms.TextBox();
-            this.Procedimiento1 = new System.Windows.Forms.CheckBox();
-            this.Procedimiento2 = new System.Windows.Forms.CheckBox();
-            this.Procedimiento3 = new System.Windows.Forms.CheckBox();
-            this.Procedimiento4 = new System.Windows.Forms.CheckBox();
             this.fechaEntradaDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.VistaPrevia = new System.Windows.Forms.PrintPreviewDialog();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
             nombreLabel = new System.Windows.Forms.Label();
             apellidoLabel = new System.Windows.Forms.Label();
             edadLabel = new System.Windows.Forms.Label();
@@ -112,7 +110,7 @@ namespace Saludent_Art.Vistas
             Total.AutoSize = true;
             Total.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             Total.ForeColor = System.Drawing.Color.Black;
-            Total.Location = new System.Drawing.Point(529, 587);
+            Total.Location = new System.Drawing.Point(703, 593);
             Total.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             Total.Name = "Total";
             Total.Size = new System.Drawing.Size(62, 25);
@@ -138,7 +136,7 @@ namespace Saludent_Art.Vistas
             this.CantidadTotal.AutoSize = true;
             this.CantidadTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.CantidadTotal.ForeColor = System.Drawing.Color.Black;
-            this.CantidadTotal.Location = new System.Drawing.Point(599, 587);
+            this.CantidadTotal.Location = new System.Drawing.Point(773, 593);
             this.CantidadTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CantidadTotal.Name = "CantidadTotal";
             this.CantidadTotal.Size = new System.Drawing.Size(56, 25);
@@ -158,7 +156,7 @@ namespace Saludent_Art.Vistas
             this.Facturar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Facturar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.Facturar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(74)))), ((int)(((byte)(86)))));
-            this.Facturar.Location = new System.Drawing.Point(534, 655);
+            this.Facturar.Location = new System.Drawing.Point(708, 637);
             this.Facturar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Facturar.Name = "Facturar";
             this.Facturar.Size = new System.Drawing.Size(121, 48);
@@ -176,14 +174,14 @@ namespace Saludent_Art.Vistas
             this.pacientesDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pacientesDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.pacientesDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(74)))), ((int)(((byte)(86)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(74)))), ((int)(((byte)(86)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.pacientesDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(74)))), ((int)(((byte)(86)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(74)))), ((int)(((byte)(86)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.pacientesDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.pacientesDataGridView.ColumnHeadersHeight = 35;
             this.pacientesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.pacientesDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -196,12 +194,12 @@ namespace Saludent_Art.Vistas
             this.pacientesDataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.pacientesDataGridView.RowHeadersVisible = false;
             this.pacientesDataGridView.RowHeadersWidth = 51;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(106)))), ((int)(((byte)(114)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(111)))), ((int)(((byte)(130)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            this.pacientesDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(106)))), ((int)(((byte)(114)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(111)))), ((int)(((byte)(130)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.pacientesDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.pacientesDataGridView.RowTemplate.Height = 24;
             this.pacientesDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.pacientesDataGridView.Size = new System.Drawing.Size(1095, 304);
@@ -304,61 +302,17 @@ namespace Saludent_Art.Vistas
             this.edadTextBox.Size = new System.Drawing.Size(78, 30);
             this.edadTextBox.TabIndex = 46;
             // 
-            // Procedimiento1
-            // 
-            this.Procedimiento1.AutoSize = true;
-            this.Procedimiento1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.Procedimiento1.Location = new System.Drawing.Point(395, 480);
-            this.Procedimiento1.Name = "Procedimiento1";
-            this.Procedimiento1.Size = new System.Drawing.Size(185, 29);
-            this.Procedimiento1.TabIndex = 47;
-            this.Procedimiento1.Text = "Procedimiento #1";
-            this.Procedimiento1.UseVisualStyleBackColor = true;
-            // 
-            // Procedimiento2
-            // 
-            this.Procedimiento2.AutoSize = true;
-            this.Procedimiento2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.Procedimiento2.Location = new System.Drawing.Point(395, 527);
-            this.Procedimiento2.Name = "Procedimiento2";
-            this.Procedimiento2.Size = new System.Drawing.Size(185, 29);
-            this.Procedimiento2.TabIndex = 48;
-            this.Procedimiento2.Text = "Procedimiento #2";
-            this.Procedimiento2.UseVisualStyleBackColor = true;
-            // 
-            // Procedimiento3
-            // 
-            this.Procedimiento3.AutoSize = true;
-            this.Procedimiento3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.Procedimiento3.Location = new System.Drawing.Point(611, 480);
-            this.Procedimiento3.Name = "Procedimiento3";
-            this.Procedimiento3.Size = new System.Drawing.Size(185, 29);
-            this.Procedimiento3.TabIndex = 49;
-            this.Procedimiento3.Text = "Procedimiento #3";
-            this.Procedimiento3.UseVisualStyleBackColor = true;
-            // 
-            // Procedimiento4
-            // 
-            this.Procedimiento4.AutoSize = true;
-            this.Procedimiento4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.Procedimiento4.Location = new System.Drawing.Point(611, 527);
-            this.Procedimiento4.Name = "Procedimiento4";
-            this.Procedimiento4.Size = new System.Drawing.Size(185, 29);
-            this.Procedimiento4.TabIndex = 50;
-            this.Procedimiento4.Text = "Procedimiento #4";
-            this.Procedimiento4.UseVisualStyleBackColor = true;
-            // 
             // fechaEntradaDateTimePicker
             // 
             this.fechaEntradaDateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.fechaEntradaDateTimePicker.CustomFormat = "dd/mm/yyyy";
+            this.fechaEntradaDateTimePicker.CustomFormat = "dd/MMMM/yyyy";
             this.fechaEntradaDateTimePicker.Enabled = false;
             this.fechaEntradaDateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.fechaEntradaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.fechaEntradaDateTimePicker.Location = new System.Drawing.Point(891, 387);
             this.fechaEntradaDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.fechaEntradaDateTimePicker.Name = "fechaEntradaDateTimePicker";
-            this.fechaEntradaDateTimePicker.Size = new System.Drawing.Size(149, 30);
+            this.fechaEntradaDateTimePicker.Size = new System.Drawing.Size(212, 30);
             this.fechaEntradaDateTimePicker.TabIndex = 54;
             // 
             // VistaPrevia
@@ -372,19 +326,55 @@ namespace Saludent_Art.Vistas
             this.VistaPrevia.Name = "VistaPrevia";
             this.VistaPrevia.Visible = false;
             // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Items.AddRange(new object[] {
+            "Procedimiento 1",
+            "Procedimiento 2",
+            "Procedimiento 3",
+            "Procedimiento 4",
+            "Procedimiento 5",
+            "Procedimiento 6",
+            "Procedimiento 7",
+            "Procedimiento 8",
+            "Procedimiento 9",
+            "Procedimiento 10"});
+            this.checkedListBox1.Location = new System.Drawing.Point(40, 443);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(250, 242);
+            this.checkedListBox1.TabIndex = 62;
+            // 
+            // checkedListBox2
+            // 
+            this.checkedListBox2.FormattingEnabled = true;
+            this.checkedListBox2.Items.AddRange(new object[] {
+            "Procedimiento 1",
+            "Procedimiento 2",
+            "Procedimiento 3",
+            "Procedimiento 4",
+            "Procedimiento 5",
+            "Procedimiento 6",
+            "Procedimiento 7",
+            "Procedimiento 8",
+            "Procedimiento 9",
+            "Procedimiento 10"});
+            this.checkedListBox2.Location = new System.Drawing.Point(384, 443);
+            this.checkedListBox2.Name = "checkedListBox2";
+            this.checkedListBox2.Size = new System.Drawing.Size(250, 242);
+            this.checkedListBox2.TabIndex = 63;
+            // 
             // Factura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1125, 743);
+            this.Controls.Add(this.checkedListBox2);
+            this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.fechaEntradaDateTimePicker);
             this.Controls.Add(fechaEntradaLabel);
             this.Controls.Add(this.CantidadTotal);
             this.Controls.Add(Total);
-            this.Controls.Add(this.Procedimiento4);
-            this.Controls.Add(this.Procedimiento3);
-            this.Controls.Add(this.Procedimiento2);
-            this.Controls.Add(this.Procedimiento1);
             this.Controls.Add(nombreLabel);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.nombreTextBox);
@@ -424,12 +414,10 @@ namespace Saludent_Art.Vistas
         private System.Windows.Forms.TextBox nombreTextBox;
         private System.Windows.Forms.TextBox apellidoTextBox;
         private System.Windows.Forms.TextBox edadTextBox;
-        private System.Windows.Forms.CheckBox Procedimiento1;
-        private System.Windows.Forms.CheckBox Procedimiento2;
-        private System.Windows.Forms.CheckBox Procedimiento3;
-        private System.Windows.Forms.CheckBox Procedimiento4;
         private System.Windows.Forms.DateTimePicker fechaEntradaDateTimePicker;
         private System.Windows.Forms.Label CantidadTotal;
         private System.Windows.Forms.PrintPreviewDialog VistaPrevia;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.CheckedListBox checkedListBox2;
     }
 }

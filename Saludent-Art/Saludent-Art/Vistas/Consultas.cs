@@ -135,6 +135,10 @@ namespace Saludent_Art.Vistas
         private void Consultas_Load(object sender, EventArgs e)
         {
             MostrarConsultas();
+            for (int i = 0; i < 9; i++)
+            {
+                consultasDataGridView.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            }
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -285,7 +289,7 @@ namespace Saludent_Art.Vistas
 
         private void RB1_SI_CheckedChanged(object sender, EventArgs e)
         {
-            txtMedicamentoAlergico.Text = "";
+           txtMedicamentoAlergico.Text = "";
         }
 
         private void txtIntervencionQuirurgica_TextChanged(object sender, EventArgs e)
