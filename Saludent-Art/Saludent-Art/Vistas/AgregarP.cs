@@ -54,11 +54,13 @@ namespace Saludent_Art
         private void guardar_MouseHover(object sender, EventArgs e)
         {
             guardar.ForeColor = Color.FromArgb(216, 227, 231);
+            //guardar.FlatAppearance.BorderColor = Color.White;
         }
 
         private void guardar_MouseLeave(object sender, EventArgs e)
         {
             guardar.ForeColor = Color.FromArgb(12, 74, 86);
+            //guardar.FlatAppearance.BorderColor = Color.FromArgb(12, 74, 86);
         }
     }
 }

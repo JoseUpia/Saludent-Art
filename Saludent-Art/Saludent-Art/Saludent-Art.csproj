@@ -232,22 +232,22 @@
   <ItemGroup>
     <PublishFile Include="DataBase\Saludent-Art.mdf">
       <Visible>False</Visible>
+      <PublishState>DataFile</PublishState>
+      <IncludeHash>True</IncludeHash>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
-      <PublishState>DataFile</PublishState>
-      <IncludeHash>True</IncludeHash>
       <FileType>File</FileType>
     </PublishFile>
     <PublishFile Include="DataBase\Saludent-Art_log.ldf">
       <Visible>False</Visible>
+      <PublishState>DataFile</PublishState>
+      <IncludeHash>True</IncludeHash>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
-      <PublishState>DataFile</PublishState>
-      <IncludeHash>True</IncludeHash>
       <FileType>File</FileType>
     </PublishFile>
   </ItemGroup>
@@ -296,7 +296,11 @@
       <DependentUpon>Saludent-Art.mdf</DependentUpon>
     </Content>
     <Content Include="Logo_Saludent-Art.ico" />
+    <None Include="Resources\anterior.png" />
     <Content Include="Resources\FacturaSaludent-Art.png" />
+    <None Include="Resources\siguiente.png" />
+    <None Include="Resources\FacturaSaludent-ArtPre-llenada.png" />
+    <None Include="Resources\FacturaSaludent-ArtVacia.png" />
     <Content Include="Resources\Logo_Saludent-Art.ico" />
   </ItemGroup>
   <ItemGroup>

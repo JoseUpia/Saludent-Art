@@ -28,5 +28,31 @@ namespace Saludent_Art.Modelos
 
             return tabla;
         }
+
+        public void Facturar(int IdPaciente, string FechaFactura)
+        {
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "INSERT INTO Factura VALUES("+IdPaciente+", '"+FechaFactura+"')";
+            comando.CommandType = CommandType.Text;
+
+            leer = comando.ExecuteReader();
+            tabla.Load(leer);
+            conexion.CerrarConexion();
+        }
+
+        public int ObtenerIdFactura(int IdPaciente, string Fecha)
+        {
+            tabla.Rows.Clear();
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "SELECT IdFactura FROM Factura WHERE IdPaciente = "+IdPaciente+" AND Fecha = '"+Fecha+"'";
+            comando.CommandType = CommandType.Text;
+
+            leer = comando.ExecuteReader();
+            tabla.Load(leer);
+            conexion.CerrarConexion();
+
+            return Convert.ToInt32(tabla.Rows[0][0]);
+
+        }
     }
 }

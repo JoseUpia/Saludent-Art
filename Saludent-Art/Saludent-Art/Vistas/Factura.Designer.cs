@@ -37,7 +37,7 @@ namespace Saludent_Art.Vistas
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Factura));
-            this.CantidadTotal = new System.Windows.Forms.Label();
+            this.PrecioTotal = new System.Windows.Forms.Label();
             this.ImprimirDocumento = new System.Drawing.Printing.PrintDocument();
             this.Facturar = new System.Windows.Forms.Button();
             this.pacientesDataGridView = new System.Windows.Forms.DataGridView();
@@ -51,10 +51,12 @@ namespace Saludent_Art.Vistas
             this.nombreTextBox = new System.Windows.Forms.TextBox();
             this.apellidoTextBox = new System.Windows.Forms.TextBox();
             this.edadTextBox = new System.Windows.Forms.TextBox();
-            this.fechaEntradaDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.VistaPrevia = new System.Windows.Forms.PrintPreviewDialog();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
+            this.listBoxProcedimientos = new System.Windows.Forms.ListBox();
+            this.listBoxProcedimientosSelecionados = new System.Windows.Forms.ListBox();
+            this.SelecionarProcedimiento = new FontAwesome.Sharp.IconButton();
+            this.DevolverProcedimiento = new FontAwesome.Sharp.IconButton();
+            this.fechaEntradaDateTimePicker = new System.Windows.Forms.DateTimePicker();
             nombreLabel = new System.Windows.Forms.Label();
             apellidoLabel = new System.Windows.Forms.Label();
             edadLabel = new System.Windows.Forms.Label();
@@ -71,7 +73,7 @@ namespace Saludent_Art.Vistas
             nombreLabel.AutoSize = true;
             nombreLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             nombreLabel.ForeColor = System.Drawing.Color.Black;
-            nombreLabel.Location = new System.Drawing.Point(35, 392);
+            nombreLabel.Location = new System.Drawing.Point(22, 371);
             nombreLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             nombreLabel.Name = "nombreLabel";
             nombreLabel.Size = new System.Drawing.Size(87, 25);
@@ -84,7 +86,7 @@ namespace Saludent_Art.Vistas
             apellidoLabel.AutoSize = true;
             apellidoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             apellidoLabel.ForeColor = System.Drawing.Color.Black;
-            apellidoLabel.Location = new System.Drawing.Point(328, 392);
+            apellidoLabel.Location = new System.Drawing.Point(302, 371);
             apellidoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             apellidoLabel.Name = "apellidoLabel";
             apellidoLabel.Size = new System.Drawing.Size(88, 25);
@@ -97,7 +99,7 @@ namespace Saludent_Art.Vistas
             edadLabel.AutoSize = true;
             edadLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             edadLabel.ForeColor = System.Drawing.Color.Black;
-            edadLabel.Location = new System.Drawing.Point(636, 392);
+            edadLabel.Location = new System.Drawing.Point(573, 374);
             edadLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             edadLabel.Name = "edadLabel";
             edadLabel.Size = new System.Drawing.Size(64, 25);
@@ -110,12 +112,12 @@ namespace Saludent_Art.Vistas
             Total.AutoSize = true;
             Total.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             Total.ForeColor = System.Drawing.Color.Black;
-            Total.Location = new System.Drawing.Point(703, 593);
+            Total.Location = new System.Drawing.Point(876, 676);
             Total.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             Total.Name = "Total";
-            Total.Size = new System.Drawing.Size(62, 25);
+            Total.Size = new System.Drawing.Size(78, 25);
             Total.TabIndex = 51;
-            Total.Text = "Total:";
+            Total.Text = "Total: $";
             // 
             // fechaEntradaLabel
             // 
@@ -123,25 +125,25 @@ namespace Saludent_Art.Vistas
             fechaEntradaLabel.AutoSize = true;
             fechaEntradaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             fechaEntradaLabel.ForeColor = System.Drawing.Color.Black;
-            fechaEntradaLabel.Location = new System.Drawing.Point(810, 392);
+            fechaEntradaLabel.Location = new System.Drawing.Point(714, 374);
             fechaEntradaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             fechaEntradaLabel.Name = "fechaEntradaLabel";
             fechaEntradaLabel.Size = new System.Drawing.Size(73, 25);
             fechaEntradaLabel.TabIndex = 53;
             fechaEntradaLabel.Text = "Fecha:";
             // 
-            // CantidadTotal
+            // PrecioTotal
             // 
-            this.CantidadTotal.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.CantidadTotal.AutoSize = true;
-            this.CantidadTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.CantidadTotal.ForeColor = System.Drawing.Color.Black;
-            this.CantidadTotal.Location = new System.Drawing.Point(773, 593);
-            this.CantidadTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.CantidadTotal.Name = "CantidadTotal";
-            this.CantidadTotal.Size = new System.Drawing.Size(56, 25);
-            this.CantidadTotal.TabIndex = 52;
-            this.CantidadTotal.Text = "0000";
+            this.PrecioTotal.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PrecioTotal.AutoSize = true;
+            this.PrecioTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.PrecioTotal.ForeColor = System.Drawing.Color.Black;
+            this.PrecioTotal.Location = new System.Drawing.Point(946, 676);
+            this.PrecioTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.PrecioTotal.Name = "PrecioTotal";
+            this.PrecioTotal.Size = new System.Drawing.Size(23, 25);
+            this.PrecioTotal.TabIndex = 52;
+            this.PrecioTotal.Text = "0";
             // 
             // ImprimirDocumento
             // 
@@ -156,7 +158,7 @@ namespace Saludent_Art.Vistas
             this.Facturar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Facturar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.Facturar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(74)))), ((int)(((byte)(86)))));
-            this.Facturar.Location = new System.Drawing.Point(708, 637);
+            this.Facturar.Location = new System.Drawing.Point(503, 664);
             this.Facturar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Facturar.Name = "Facturar";
             this.Facturar.Size = new System.Drawing.Size(121, 48);
@@ -164,6 +166,8 @@ namespace Saludent_Art.Vistas
             this.Facturar.Text = "&Facturar";
             this.Facturar.UseVisualStyleBackColor = true;
             this.Facturar.Click += new System.EventHandler(this.guardar_Click);
+            this.Facturar.MouseLeave += new System.EventHandler(this.Facturar_MouseLeave);
+            this.Facturar.MouseHover += new System.EventHandler(this.Facturar_MouseHover);
             // 
             // pacientesDataGridView
             // 
@@ -273,47 +277,34 @@ namespace Saludent_Art.Vistas
             // 
             this.nombreTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.nombreTextBox.Enabled = false;
-            this.nombreTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.nombreTextBox.Location = new System.Drawing.Point(130, 389);
+            this.nombreTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.nombreTextBox.Location = new System.Drawing.Point(117, 368);
             this.nombreTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.nombreTextBox.Name = "nombreTextBox";
-            this.nombreTextBox.Size = new System.Drawing.Size(177, 30);
+            this.nombreTextBox.Size = new System.Drawing.Size(177, 34);
             this.nombreTextBox.TabIndex = 42;
             // 
             // apellidoTextBox
             // 
             this.apellidoTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.apellidoTextBox.Enabled = false;
-            this.apellidoTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.apellidoTextBox.Location = new System.Drawing.Point(433, 389);
+            this.apellidoTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.apellidoTextBox.Location = new System.Drawing.Point(388, 368);
             this.apellidoTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.apellidoTextBox.Name = "apellidoTextBox";
-            this.apellidoTextBox.Size = new System.Drawing.Size(177, 30);
+            this.apellidoTextBox.Size = new System.Drawing.Size(177, 34);
             this.apellidoTextBox.TabIndex = 44;
             // 
             // edadTextBox
             // 
             this.edadTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.edadTextBox.Enabled = false;
-            this.edadTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.edadTextBox.Location = new System.Drawing.Point(708, 389);
+            this.edadTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.edadTextBox.Location = new System.Drawing.Point(645, 368);
             this.edadTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.edadTextBox.Name = "edadTextBox";
-            this.edadTextBox.Size = new System.Drawing.Size(78, 30);
+            this.edadTextBox.Size = new System.Drawing.Size(61, 34);
             this.edadTextBox.TabIndex = 46;
-            // 
-            // fechaEntradaDateTimePicker
-            // 
-            this.fechaEntradaDateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.fechaEntradaDateTimePicker.CustomFormat = "dd/MMMM/yyyy";
-            this.fechaEntradaDateTimePicker.Enabled = false;
-            this.fechaEntradaDateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.fechaEntradaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.fechaEntradaDateTimePicker.Location = new System.Drawing.Point(891, 387);
-            this.fechaEntradaDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.fechaEntradaDateTimePicker.Name = "fechaEntradaDateTimePicker";
-            this.fechaEntradaDateTimePicker.Size = new System.Drawing.Size(212, 30);
-            this.fechaEntradaDateTimePicker.TabIndex = 54;
             // 
             // VistaPrevia
             // 
@@ -326,54 +317,86 @@ namespace Saludent_Art.Vistas
             this.VistaPrevia.Name = "VistaPrevia";
             this.VistaPrevia.Visible = false;
             // 
-            // checkedListBox1
+            // listBoxProcedimientos
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            "Procedimiento 1",
-            "Procedimiento 2",
-            "Procedimiento 3",
-            "Procedimiento 4",
-            "Procedimiento 5",
-            "Procedimiento 6",
-            "Procedimiento 7",
-            "Procedimiento 8",
-            "Procedimiento 9",
-            "Procedimiento 10"});
-            this.checkedListBox1.Location = new System.Drawing.Point(40, 443);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(250, 242);
-            this.checkedListBox1.TabIndex = 62;
+            this.listBoxProcedimientos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listBoxProcedimientos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.listBoxProcedimientos.FormattingEnabled = true;
+            this.listBoxProcedimientos.ItemHeight = 25;
+            this.listBoxProcedimientos.Location = new System.Drawing.Point(120, 465);
+            this.listBoxProcedimientos.Name = "listBoxProcedimientos";
+            this.listBoxProcedimientos.Size = new System.Drawing.Size(343, 200);
+            this.listBoxProcedimientos.TabIndex = 55;
             // 
-            // checkedListBox2
+            // listBoxProcedimientosSelecionados
             // 
-            this.checkedListBox2.FormattingEnabled = true;
-            this.checkedListBox2.Items.AddRange(new object[] {
-            "Procedimiento 1",
-            "Procedimiento 2",
-            "Procedimiento 3",
-            "Procedimiento 4",
-            "Procedimiento 5",
-            "Procedimiento 6",
-            "Procedimiento 7",
-            "Procedimiento 8",
-            "Procedimiento 9",
-            "Procedimiento 10"});
-            this.checkedListBox2.Location = new System.Drawing.Point(384, 443);
-            this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(250, 242);
-            this.checkedListBox2.TabIndex = 63;
+            this.listBoxProcedimientosSelecionados.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listBoxProcedimientosSelecionados.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.listBoxProcedimientosSelecionados.FormattingEnabled = true;
+            this.listBoxProcedimientosSelecionados.ItemHeight = 25;
+            this.listBoxProcedimientosSelecionados.Location = new System.Drawing.Point(669, 465);
+            this.listBoxProcedimientosSelecionados.Name = "listBoxProcedimientosSelecionados";
+            this.listBoxProcedimientosSelecionados.Size = new System.Drawing.Size(343, 200);
+            this.listBoxProcedimientosSelecionados.TabIndex = 56;
+            // 
+            // SelecionarProcedimiento
+            // 
+            this.SelecionarProcedimiento.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SelecionarProcedimiento.FlatAppearance.BorderSize = 0;
+            this.SelecionarProcedimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SelecionarProcedimiento.IconChar = FontAwesome.Sharp.IconChar.ChevronCircleRight;
+            this.SelecionarProcedimiento.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(74)))), ((int)(((byte)(86)))));
+            this.SelecionarProcedimiento.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.SelecionarProcedimiento.IconSize = 80;
+            this.SelecionarProcedimiento.Location = new System.Drawing.Point(529, 481);
+            this.SelecionarProcedimiento.Name = "SelecionarProcedimiento";
+            this.SelecionarProcedimiento.Size = new System.Drawing.Size(68, 68);
+            this.SelecionarProcedimiento.TabIndex = 59;
+            this.SelecionarProcedimiento.UseVisualStyleBackColor = true;
+            this.SelecionarProcedimiento.Click += new System.EventHandler(this.SelecionarProcedimiento_Click);
+            // 
+            // DevolverProcedimiento
+            // 
+            this.DevolverProcedimiento.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DevolverProcedimiento.FlatAppearance.BorderSize = 0;
+            this.DevolverProcedimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DevolverProcedimiento.IconChar = FontAwesome.Sharp.IconChar.ChevronCircleLeft;
+            this.DevolverProcedimiento.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(74)))), ((int)(((byte)(86)))));
+            this.DevolverProcedimiento.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.DevolverProcedimiento.IconSize = 80;
+            this.DevolverProcedimiento.Location = new System.Drawing.Point(529, 575);
+            this.DevolverProcedimiento.Name = "DevolverProcedimiento";
+            this.DevolverProcedimiento.Size = new System.Drawing.Size(68, 68);
+            this.DevolverProcedimiento.TabIndex = 59;
+            this.DevolverProcedimiento.UseVisualStyleBackColor = true;
+            this.DevolverProcedimiento.Click += new System.EventHandler(this.DevolverProcedimiento_Click);
+            // 
+            // fechaEntradaDateTimePicker
+            // 
+            this.fechaEntradaDateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.fechaEntradaDateTimePicker.CustomFormat = "dd/MMMM/yyyy h:mm tt";
+            this.fechaEntradaDateTimePicker.Enabled = false;
+            this.fechaEntradaDateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.fechaEntradaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.fechaEntradaDateTimePicker.Location = new System.Drawing.Point(785, 368);
+            this.fechaEntradaDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.fechaEntradaDateTimePicker.Name = "fechaEntradaDateTimePicker";
+            this.fechaEntradaDateTimePicker.Size = new System.Drawing.Size(327, 34);
+            this.fechaEntradaDateTimePicker.TabIndex = 54;
             // 
             // Factura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(227)))), ((int)(((byte)(231)))));
             this.ClientSize = new System.Drawing.Size(1125, 743);
-            this.Controls.Add(this.checkedListBox2);
-            this.Controls.Add(this.checkedListBox1);
+            this.Controls.Add(this.DevolverProcedimiento);
+            this.Controls.Add(this.SelecionarProcedimiento);
+            this.Controls.Add(this.listBoxProcedimientosSelecionados);
+            this.Controls.Add(this.listBoxProcedimientos);
             this.Controls.Add(this.fechaEntradaDateTimePicker);
             this.Controls.Add(fechaEntradaLabel);
-            this.Controls.Add(this.CantidadTotal);
+            this.Controls.Add(this.PrecioTotal);
             this.Controls.Add(Total);
             this.Controls.Add(nombreLabel);
             this.Controls.Add(this.panel5);
@@ -414,10 +437,12 @@ namespace Saludent_Art.Vistas
         private System.Windows.Forms.TextBox nombreTextBox;
         private System.Windows.Forms.TextBox apellidoTextBox;
         private System.Windows.Forms.TextBox edadTextBox;
-        private System.Windows.Forms.DateTimePicker fechaEntradaDateTimePicker;
-        private System.Windows.Forms.Label CantidadTotal;
+        private System.Windows.Forms.Label PrecioTotal;
         private System.Windows.Forms.PrintPreviewDialog VistaPrevia;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
-        private System.Windows.Forms.CheckedListBox checkedListBox2;
+        private System.Windows.Forms.ListBox listBoxProcedimientos;
+        private System.Windows.Forms.ListBox listBoxProcedimientosSelecionados;
+        private FontAwesome.Sharp.IconButton SelecionarProcedimiento;
+        private FontAwesome.Sharp.IconButton DevolverProcedimiento;
+        private System.Windows.Forms.DateTimePicker fechaEntradaDateTimePicker;
     }
 }

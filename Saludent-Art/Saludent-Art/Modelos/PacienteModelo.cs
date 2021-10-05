@@ -30,6 +30,19 @@ namespace Saludent_Art.Modelos
             return tabla;
         }
 
+        public int ObtenerIdPaciente(string Nombre, string Apellido)
+        {
+            tabla.Rows.Clear();
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "SELECT IdPaciente FROM Pacientes WHERE Nombre = '"+Nombre+"' AND Apellido = '"+Apellido+"'";
+            comando.CommandType = CommandType.Text;
+
+            leer = comando.ExecuteReader();
+            tabla.Load(leer);
+            conexion.CerrarConexion();
+
+            return Convert.ToInt32(tabla.Rows[0][0]);
+        }
         public DataTable Filtrar(string buscar)
         {
             comando.Connection = conexion.AbrirConexion(); 
