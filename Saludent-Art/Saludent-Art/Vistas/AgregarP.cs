@@ -62,5 +62,50 @@ namespace Saludent_Art
             guardar.ForeColor = Color.FromArgb(12, 74, 86);
             //guardar.FlatAppearance.BorderColor = Color.FromArgb(12, 74, 86);
         }
+
+        private void edadTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >=58 && e.KeyChar <= 255)){
+                MessageBox.Show("Solo Numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void telefonoTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo Numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void nombreTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 33 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 129) ||
+                (e.KeyChar >= 131 && e.KeyChar <= 143) || (e.KeyChar >= 145 && e.KeyChar <= 159) || (e.KeyChar >= 166 && e.KeyChar <= 180) ||
+                (e.KeyChar >= 182 && e.KeyChar <= 213) || (e.KeyChar >= 215 && e.KeyChar <= 223) || (e.KeyChar >= 225 && e.KeyChar <= 232) ||
+                (e.KeyChar >= 234 && e.KeyChar <= 255)) 
+            {
+                MessageBox.Show("Solo Letras", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void apellidoTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 33 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 129) ||
+                (e.KeyChar >= 131 && e.KeyChar <= 143) || (e.KeyChar >= 145 && e.KeyChar <= 159) || (e.KeyChar >= 166 && e.KeyChar <= 180) ||
+                (e.KeyChar >= 182 && e.KeyChar <= 213) || (e.KeyChar >= 215 && e.KeyChar <= 223) || (e.KeyChar >= 225 && e.KeyChar <= 232) ||
+                (e.KeyChar >= 234 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo Letras", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
     }
 }

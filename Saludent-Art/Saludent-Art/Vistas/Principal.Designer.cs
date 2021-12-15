@@ -399,7 +399,7 @@ namespace Saludent_Art
             this.Hora.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Hora.Size = new System.Drawing.Size(220, 60);
             this.Hora.TabIndex = 1;
-            this.Hora.Text = "07:50:00 PM";
+            this.Hora.Text = "00:00:00 PM";
             this.Hora.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // pictureBox1

@@ -173,8 +173,10 @@ namespace Saludent_Art
             this.nombreTextBox.Location = new System.Drawing.Point(194, 60);
             this.nombreTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.nombreTextBox.Name = "nombreTextBox";
+            this.nombreTextBox.ShortcutsEnabled = false;
             this.nombreTextBox.Size = new System.Drawing.Size(298, 30);
             this.nombreTextBox.TabIndex = 3;
+            this.nombreTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.nombreTextBox_KeyPress);
             // 
             // apellidoTextBox
             // 
@@ -182,8 +184,10 @@ namespace Saludent_Art
             this.apellidoTextBox.Location = new System.Drawing.Point(716, 58);
             this.apellidoTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.apellidoTextBox.Name = "apellidoTextBox";
+            this.apellidoTextBox.ShortcutsEnabled = false;
             this.apellidoTextBox.Size = new System.Drawing.Size(298, 30);
             this.apellidoTextBox.TabIndex = 5;
+            this.apellidoTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.apellidoTextBox_KeyPress);
             // 
             // edadTextBox
             // 
@@ -191,8 +195,10 @@ namespace Saludent_Art
             this.edadTextBox.Location = new System.Drawing.Point(194, 108);
             this.edadTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.edadTextBox.Name = "edadTextBox";
+            this.edadTextBox.ShortcutsEnabled = false;
             this.edadTextBox.Size = new System.Drawing.Size(298, 30);
             this.edadTextBox.TabIndex = 7;
+            this.edadTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.edadTextBox_KeyPress);
             // 
             // generoComboBox
             // 
@@ -214,8 +220,10 @@ namespace Saludent_Art
             this.telefonoTextBox.Location = new System.Drawing.Point(194, 152);
             this.telefonoTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.telefonoTextBox.Name = "telefonoTextBox";
+            this.telefonoTextBox.ShortcutsEnabled = false;
             this.telefonoTextBox.Size = new System.Drawing.Size(298, 30);
             this.telefonoTextBox.TabIndex = 11;
+            this.telefonoTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.telefonoTextBox_KeyPress);
             // 
             // fechaEntradaDateTimePicker
             // 
