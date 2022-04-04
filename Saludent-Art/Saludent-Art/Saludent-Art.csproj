@@ -237,16 +237,6 @@
     <None Include="Resources\Flecha atras.png" />
   </ItemGroup>
   <ItemGroup>
-    <PublishFile Include="DataBase\Saludent-Art.mdf">
-      <Visible>False</Visible>
-      <Group>
-      </Group>
-      <TargetPath>
-      </TargetPath>
-      <PublishState>DataFile</PublishState>
-      <IncludeHash>True</IncludeHash>
-      <FileType>File</FileType>
-    </PublishFile>
     <PublishFile Include="DataBase\Saludent-Art_log.ldf">
       <Visible>False</Visible>
       <Group>

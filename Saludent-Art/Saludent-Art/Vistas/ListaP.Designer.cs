@@ -50,16 +50,18 @@ namespace Saludent_Art
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1125, 99);
+            this.panel1.Size = new System.Drawing.Size(844, 80);
             this.panel1.TabIndex = 2;
             // 
             // txtBuscar
             // 
             this.txtBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtBuscar.Location = new System.Drawing.Point(170, 32);
+            this.txtBuscar.Location = new System.Drawing.Point(128, 26);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(135, 30);
+            this.txtBuscar.Size = new System.Drawing.Size(102, 26);
             this.txtBuscar.TabIndex = 3;
             this.txtBuscar.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -68,9 +70,10 @@ namespace Saludent_Art
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(10, 35);
+            this.label1.Location = new System.Drawing.Point(8, 28);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(154, 25);
+            this.label1.Size = new System.Drawing.Size(125, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "Buscar Paciente";
             // 
@@ -78,6 +81,8 @@ namespace Saludent_Art
             // 
             this.pacientesDataGridView.AllowUserToAddRows = false;
             this.pacientesDataGridView.AllowUserToDeleteRows = false;
+            this.pacientesDataGridView.AllowUserToResizeColumns = false;
+            this.pacientesDataGridView.AllowUserToResizeRows = false;
             this.pacientesDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.pacientesDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(134)))), ((int)(((byte)(142)))));
             this.pacientesDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -97,7 +102,8 @@ namespace Saludent_Art
             this.pacientesDataGridView.EnableHeadersVisualStyles = false;
             this.pacientesDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(45)))), ((int)(((byte)(52)))));
             this.pacientesDataGridView.Location = new System.Drawing.Point(0, 0);
-            this.pacientesDataGridView.Margin = new System.Windows.Forms.Padding(10);
+            this.pacientesDataGridView.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.pacientesDataGridView.MultiSelect = false;
             this.pacientesDataGridView.Name = "pacientesDataGridView";
             this.pacientesDataGridView.ReadOnly = true;
             this.pacientesDataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -111,53 +117,58 @@ namespace Saludent_Art
             this.pacientesDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.pacientesDataGridView.RowTemplate.Height = 24;
             this.pacientesDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.pacientesDataGridView.Size = new System.Drawing.Size(1095, 629);
+            this.pacientesDataGridView.Size = new System.Drawing.Size(822, 512);
             this.pacientesDataGridView.TabIndex = 2;
             // 
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 99);
+            this.panel2.Location = new System.Drawing.Point(0, 80);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(15, 644);
+            this.panel2.Size = new System.Drawing.Size(11, 524);
             this.panel2.TabIndex = 4;
             // 
             // panel3
             // 
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(1110, 99);
+            this.panel3.Location = new System.Drawing.Point(833, 80);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(15, 644);
+            this.panel3.Size = new System.Drawing.Size(11, 524);
             this.panel3.TabIndex = 5;
             // 
             // panel4
             // 
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(15, 728);
+            this.panel4.Location = new System.Drawing.Point(11, 592);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1095, 15);
+            this.panel4.Size = new System.Drawing.Size(822, 12);
             this.panel4.TabIndex = 6;
             // 
             // panel5
             // 
             this.panel5.Controls.Add(this.pacientesDataGridView);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(15, 99);
+            this.panel5.Location = new System.Drawing.Point(11, 80);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1095, 629);
+            this.panel5.Size = new System.Drawing.Size(822, 512);
             this.panel5.TabIndex = 7;
             // 
             // ListaP
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(227)))), ((int)(((byte)(231)))));
-            this.ClientSize = new System.Drawing.Size(1125, 743);
+            this.ClientSize = new System.Drawing.Size(844, 604);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ListaP";
             this.Text = "ListaP";
             this.Load += new System.EventHandler(this.ListaP_Load);

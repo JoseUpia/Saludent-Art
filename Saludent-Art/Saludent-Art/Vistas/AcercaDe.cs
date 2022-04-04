@@ -24,12 +24,12 @@ namespace Saludent_Art.Vistas
 
         private void btnAgregar_MouseHover(object sender, EventArgs e)
         {
-            btnAgregar.ForeColor = Color.FromArgb(216, 227, 231);
+            
         }
 
         private void btnAgregar_MouseLeave(object sender, EventArgs e)
         {
-            btnAgregar.ForeColor = Color.FromArgb(12, 74, 86);
+            
         }
     }
 }

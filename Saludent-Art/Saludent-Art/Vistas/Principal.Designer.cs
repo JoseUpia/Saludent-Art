@@ -33,7 +33,6 @@ namespace Saludent_Art
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.BarraSuperior = new System.Windows.Forms.Panel();
             this.Minimizar = new System.Windows.Forms.PictureBox();
-            this.Restaurar = new System.Windows.Forms.PictureBox();
             this.Maximizar = new System.Windows.Forms.PictureBox();
             this.Cerrar = new System.Windows.Forms.PictureBox();
             this.BarraIzquierda = new System.Windows.Forms.Panel();
@@ -51,9 +50,9 @@ namespace Saludent_Art
             this.Hora = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.Restaurar = new System.Windows.Forms.PictureBox();
             this.BarraSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Restaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Maximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cerrar)).BeginInit();
             this.BarraIzquierda.SuspendLayout();
@@ -61,6 +60,7 @@ namespace Saludent_Art
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.PanelCentral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Restaurar)).BeginInit();
             this.SuspendLayout();
             // 
             // BarraSuperior
@@ -90,20 +90,6 @@ namespace Saludent_Art
             this.Minimizar.TabIndex = 3;
             this.Minimizar.TabStop = false;
             this.Minimizar.Click += new System.EventHandler(this.Minimizar_Click);
-            // 
-            // Restaurar
-            // 
-            this.Restaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Restaurar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Restaurar.Image = ((System.Drawing.Image)(resources.GetObject("Restaurar.Image")));
-            this.Restaurar.Location = new System.Drawing.Point(1366, 4);
-            this.Restaurar.Name = "Restaurar";
-            this.Restaurar.Size = new System.Drawing.Size(25, 25);
-            this.Restaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Restaurar.TabIndex = 2;
-            this.Restaurar.TabStop = false;
-            this.Restaurar.Visible = false;
-            this.Restaurar.Click += new System.EventHandler(this.Restaurar_Click);
             // 
             // Maximizar
             // 
@@ -418,6 +404,20 @@ namespace Saludent_Art
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // Restaurar
+            // 
+            this.Restaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.Restaurar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Restaurar.Image = ((System.Drawing.Image)(resources.GetObject("Restaurar.Image")));
+            this.Restaurar.Location = new System.Drawing.Point(1266, 0);
+            this.Restaurar.Name = "Restaurar";
+            this.Restaurar.Size = new System.Drawing.Size(25, 25);
+            this.Restaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Restaurar.TabIndex = 2;
+            this.Restaurar.TabStop = false;
+            this.Restaurar.Visible = false;
+            this.Restaurar.Click += new System.EventHandler(this.Restaurar_Click);
+            // 
             // Principal
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -435,7 +435,6 @@ namespace Saludent_Art
             this.Load += new System.EventHandler(this.Principal_Load);
             this.BarraSuperior.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Restaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Maximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cerrar)).EndInit();
             this.BarraIzquierda.ResumeLayout(false);
@@ -443,6 +442,7 @@ namespace Saludent_Art
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.PanelCentral.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Restaurar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -456,7 +456,6 @@ namespace Saludent_Art
         private System.Windows.Forms.PictureBox Cerrar;
         private System.Windows.Forms.Panel Logo;
         private System.Windows.Forms.PictureBox Maximizar;
-        private System.Windows.Forms.PictureBox Restaurar;
         private System.Windows.Forms.PictureBox Minimizar;
         private FontAwesome.Sharp.IconButton Configuracion;
         private FontAwesome.Sharp.IconButton Consultas;
@@ -469,6 +468,7 @@ namespace Saludent_Art
         private System.Windows.Forms.Timer timer1;
         private FontAwesome.Sharp.IconButton Facturar;
         private FontAwesome.Sharp.IconButton Acumulado;
+        private System.Windows.Forms.PictureBox Restaurar;
     }
 }
 

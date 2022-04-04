@@ -29,8 +29,8 @@ namespace Saludent_Art.Vistas
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelBordeAbajo = new System.Windows.Forms.Panel();
             this.panelBordeIzquierda = new System.Windows.Forms.Panel();
             this.panelBordeDerecha = new System.Windows.Forms.Panel();
@@ -116,33 +116,37 @@ namespace Saludent_Art.Vistas
             // panelBordeAbajo
             // 
             this.panelBordeAbajo.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelBordeAbajo.Location = new System.Drawing.Point(15, 728);
+            this.panelBordeAbajo.Location = new System.Drawing.Point(11, 592);
+            this.panelBordeAbajo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelBordeAbajo.Name = "panelBordeAbajo";
-            this.panelBordeAbajo.Size = new System.Drawing.Size(1110, 15);
+            this.panelBordeAbajo.Size = new System.Drawing.Size(833, 12);
             this.panelBordeAbajo.TabIndex = 8;
             // 
             // panelBordeIzquierda
             // 
             this.panelBordeIzquierda.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelBordeIzquierda.Location = new System.Drawing.Point(0, 0);
+            this.panelBordeIzquierda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelBordeIzquierda.Name = "panelBordeIzquierda";
-            this.panelBordeIzquierda.Size = new System.Drawing.Size(15, 743);
+            this.panelBordeIzquierda.Size = new System.Drawing.Size(11, 604);
             this.panelBordeIzquierda.TabIndex = 7;
             // 
             // panelBordeDerecha
             // 
             this.panelBordeDerecha.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelBordeDerecha.Location = new System.Drawing.Point(1110, 0);
+            this.panelBordeDerecha.Location = new System.Drawing.Point(833, 0);
+            this.panelBordeDerecha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelBordeDerecha.Name = "panelBordeDerecha";
-            this.panelBordeDerecha.Size = new System.Drawing.Size(15, 728);
+            this.panelBordeDerecha.Size = new System.Drawing.Size(11, 592);
             this.panelBordeDerecha.TabIndex = 9;
             // 
             // panelBordeArriba
             // 
             this.panelBordeArriba.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBordeArriba.Location = new System.Drawing.Point(15, 0);
+            this.panelBordeArriba.Location = new System.Drawing.Point(11, 0);
+            this.panelBordeArriba.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelBordeArriba.Name = "panelBordeArriba";
-            this.panelBordeArriba.Size = new System.Drawing.Size(1095, 15);
+            this.panelBordeArriba.Size = new System.Drawing.Size(822, 12);
             this.panelBordeArriba.TabIndex = 13;
             // 
             // tabControl1
@@ -150,11 +154,12 @@ namespace Saludent_Art.Vistas
             this.tabControl1.Controls.Add(this.ConsultaSelecionada);
             this.tabControl1.Controls.Add(this.ListaConsultas);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(15, 15);
+            this.tabControl1.Location = new System.Drawing.Point(11, 12);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(0, 0);
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1095, 713);
+            this.tabControl1.Size = new System.Drawing.Size(822, 580);
             this.tabControl1.TabIndex = 15;
             // 
             // ConsultaSelecionada
@@ -178,10 +183,10 @@ namespace Saludent_Art.Vistas
             this.ConsultaSelecionada.Controls.Add(this.groupBoxP8);
             this.ConsultaSelecionada.Controls.Add(this.groupBoxP2);
             this.ConsultaSelecionada.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ConsultaSelecionada.Location = new System.Drawing.Point(4, 25);
+            this.ConsultaSelecionada.Location = new System.Drawing.Point(4, 22);
             this.ConsultaSelecionada.Margin = new System.Windows.Forms.Padding(0);
             this.ConsultaSelecionada.Name = "ConsultaSelecionada";
-            this.ConsultaSelecionada.Size = new System.Drawing.Size(1087, 684);
+            this.ConsultaSelecionada.Size = new System.Drawing.Size(814, 554);
             this.ConsultaSelecionada.TabIndex = 0;
             this.ConsultaSelecionada.Text = "Consulta Selecionada";
             // 
@@ -194,9 +199,10 @@ namespace Saludent_Art.Vistas
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(74)))), ((int)(((byte)(86)))));
-            this.btnEliminar.Location = new System.Drawing.Point(601, 621);
+            this.btnEliminar.Location = new System.Drawing.Point(437, 506);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(126, 44);
+            this.btnEliminar.Size = new System.Drawing.Size(111, 36);
             this.btnEliminar.TabIndex = 126;
             this.btnEliminar.Text = "&Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -213,9 +219,10 @@ namespace Saludent_Art.Vistas
             this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(74)))), ((int)(((byte)(86)))));
-            this.btnActualizar.Location = new System.Drawing.Point(400, 621);
+            this.btnActualizar.Location = new System.Drawing.Point(301, 506);
+            this.btnActualizar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(126, 44);
+            this.btnActualizar.Size = new System.Drawing.Size(111, 36);
             this.btnActualizar.TabIndex = 125;
             this.btnActualizar.Text = "&Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
@@ -231,11 +238,11 @@ namespace Saludent_Art.Vistas
             this.groupBoxP1.Controls.Add(this.txtMedicamentoAlergico);
             this.groupBoxP1.Controls.Add(this.RB1_SI);
             this.groupBoxP1.ForeColor = System.Drawing.Color.Black;
-            this.groupBoxP1.Location = new System.Drawing.Point(14, 10);
+            this.groupBoxP1.Location = new System.Drawing.Point(11, 8);
             this.groupBoxP1.Margin = new System.Windows.Forms.Padding(0);
             this.groupBoxP1.Name = "groupBoxP1";
             this.groupBoxP1.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBoxP1.Size = new System.Drawing.Size(336, 60);
+            this.groupBoxP1.Size = new System.Drawing.Size(252, 49);
             this.groupBoxP1.TabIndex = 112;
             this.groupBoxP1.TabStop = false;
             this.groupBoxP1.Text = "¿Es alérgico a algún medicamento?";
@@ -243,9 +250,10 @@ namespace Saludent_Art.Vistas
             // RB1_NO
             // 
             this.RB1_NO.AutoSize = true;
-            this.RB1_NO.Location = new System.Drawing.Point(55, 18);
+            this.RB1_NO.Location = new System.Drawing.Point(41, 15);
+            this.RB1_NO.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RB1_NO.Name = "RB1_NO";
-            this.RB1_NO.Size = new System.Drawing.Size(47, 21);
+            this.RB1_NO.Size = new System.Drawing.Size(39, 17);
             this.RB1_NO.TabIndex = 36;
             this.RB1_NO.TabStop = true;
             this.RB1_NO.Text = "No";
@@ -254,18 +262,20 @@ namespace Saludent_Art.Vistas
             // 
             // txtMedicamentoAlergico
             // 
-            this.txtMedicamentoAlergico.Location = new System.Drawing.Point(111, 20);
+            this.txtMedicamentoAlergico.Location = new System.Drawing.Point(83, 16);
+            this.txtMedicamentoAlergico.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMedicamentoAlergico.Name = "txtMedicamentoAlergico";
-            this.txtMedicamentoAlergico.Size = new System.Drawing.Size(199, 22);
+            this.txtMedicamentoAlergico.Size = new System.Drawing.Size(150, 20);
             this.txtMedicamentoAlergico.TabIndex = 6;
             this.txtMedicamentoAlergico.TextChanged += new System.EventHandler(this.txtMedicamentoAlergico_TextChanged);
             // 
             // RB1_SI
             // 
             this.RB1_SI.AutoSize = true;
-            this.RB1_SI.Location = new System.Drawing.Point(6, 18);
+            this.RB1_SI.Location = new System.Drawing.Point(4, 15);
+            this.RB1_SI.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RB1_SI.Name = "RB1_SI";
-            this.RB1_SI.Size = new System.Drawing.Size(41, 21);
+            this.RB1_SI.Size = new System.Drawing.Size(34, 17);
             this.RB1_SI.TabIndex = 35;
             this.RB1_SI.TabStop = true;
             this.RB1_SI.Text = "Si";
@@ -278,21 +288,22 @@ namespace Saludent_Art.Vistas
             this.groupBoxP14.BackColor = System.Drawing.Color.Transparent;
             this.groupBoxP14.Controls.Add(this.txtMotivoConsulta);
             this.groupBoxP14.ForeColor = System.Drawing.Color.Black;
-            this.groupBoxP14.Location = new System.Drawing.Point(554, 270);
+            this.groupBoxP14.Location = new System.Drawing.Point(417, 219);
             this.groupBoxP14.Margin = new System.Windows.Forms.Padding(0);
             this.groupBoxP14.Name = "groupBoxP14";
             this.groupBoxP14.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBoxP14.Size = new System.Drawing.Size(336, 70);
+            this.groupBoxP14.Size = new System.Drawing.Size(252, 57);
             this.groupBoxP14.TabIndex = 124;
             this.groupBoxP14.TabStop = false;
             this.groupBoxP14.Text = "¿Motivo de consulta?";
             // 
             // txtMotivoConsulta
             // 
-            this.txtMotivoConsulta.Location = new System.Drawing.Point(12, 18);
+            this.txtMotivoConsulta.Location = new System.Drawing.Point(9, 15);
+            this.txtMotivoConsulta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMotivoConsulta.Multiline = true;
             this.txtMotivoConsulta.Name = "txtMotivoConsulta";
-            this.txtMotivoConsulta.Size = new System.Drawing.Size(309, 43);
+            this.txtMotivoConsulta.Size = new System.Drawing.Size(233, 36);
             this.txtMotivoConsulta.TabIndex = 32;
             // 
             // groupBoxP13
@@ -302,11 +313,11 @@ namespace Saludent_Art.Vistas
             this.groupBoxP13.Controls.Add(this.RB13_NO);
             this.groupBoxP13.Controls.Add(this.RB13_SI);
             this.groupBoxP13.ForeColor = System.Drawing.Color.Black;
-            this.groupBoxP13.Location = new System.Drawing.Point(190, 270);
+            this.groupBoxP13.Location = new System.Drawing.Point(143, 219);
             this.groupBoxP13.Margin = new System.Windows.Forms.Padding(0);
             this.groupBoxP13.Name = "groupBoxP13";
             this.groupBoxP13.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBoxP13.Size = new System.Drawing.Size(336, 70);
+            this.groupBoxP13.Size = new System.Drawing.Size(252, 57);
             this.groupBoxP13.TabIndex = 123;
             this.groupBoxP13.TabStop = false;
             this.groupBoxP13.Text = "Hábitos perniciosos (morder uñas, lápices, succionar dedo)";
@@ -314,9 +325,10 @@ namespace Saludent_Art.Vistas
             // RB13_NO
             // 
             this.RB13_NO.AutoSize = true;
-            this.RB13_NO.Location = new System.Drawing.Point(55, 40);
+            this.RB13_NO.Location = new System.Drawing.Point(41, 32);
+            this.RB13_NO.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RB13_NO.Name = "RB13_NO";
-            this.RB13_NO.Size = new System.Drawing.Size(47, 21);
+            this.RB13_NO.Size = new System.Drawing.Size(39, 17);
             this.RB13_NO.TabIndex = 36;
             this.RB13_NO.TabStop = true;
             this.RB13_NO.Text = "No";
@@ -325,9 +337,10 @@ namespace Saludent_Art.Vistas
             // RB13_SI
             // 
             this.RB13_SI.AutoSize = true;
-            this.RB13_SI.Location = new System.Drawing.Point(6, 40);
+            this.RB13_SI.Location = new System.Drawing.Point(4, 32);
+            this.RB13_SI.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RB13_SI.Name = "RB13_SI";
-            this.RB13_SI.Size = new System.Drawing.Size(41, 21);
+            this.RB13_SI.Size = new System.Drawing.Size(34, 17);
             this.RB13_SI.TabIndex = 35;
             this.RB13_SI.TabStop = true;
             this.RB13_SI.Text = "Si";
@@ -340,11 +353,11 @@ namespace Saludent_Art.Vistas
             this.groupBoxP12.Controls.Add(this.RB12_NO);
             this.groupBoxP12.Controls.Add(this.RB12_SI);
             this.groupBoxP12.ForeColor = System.Drawing.Color.Black;
-            this.groupBoxP12.Location = new System.Drawing.Point(731, 205);
+            this.groupBoxP12.Location = new System.Drawing.Point(549, 167);
             this.groupBoxP12.Margin = new System.Windows.Forms.Padding(0);
             this.groupBoxP12.Name = "groupBoxP12";
             this.groupBoxP12.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBoxP12.Size = new System.Drawing.Size(336, 60);
+            this.groupBoxP12.Size = new System.Drawing.Size(252, 49);
             this.groupBoxP12.TabIndex = 122;
             this.groupBoxP12.TabStop = false;
             this.groupBoxP12.Text = "¿Siente móviles sus dientes?";
@@ -352,9 +365,10 @@ namespace Saludent_Art.Vistas
             // RB12_NO
             // 
             this.RB12_NO.AutoSize = true;
-            this.RB12_NO.Location = new System.Drawing.Point(55, 18);
+            this.RB12_NO.Location = new System.Drawing.Point(41, 15);
+            this.RB12_NO.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RB12_NO.Name = "RB12_NO";
-            this.RB12_NO.Size = new System.Drawing.Size(47, 21);
+            this.RB12_NO.Size = new System.Drawing.Size(39, 17);
             this.RB12_NO.TabIndex = 36;
             this.RB12_NO.TabStop = true;
             this.RB12_NO.Text = "No";
@@ -363,9 +377,10 @@ namespace Saludent_Art.Vistas
             // RB12_SI
             // 
             this.RB12_SI.AutoSize = true;
-            this.RB12_SI.Location = new System.Drawing.Point(6, 18);
+            this.RB12_SI.Location = new System.Drawing.Point(4, 15);
+            this.RB12_SI.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RB12_SI.Name = "RB12_SI";
-            this.RB12_SI.Size = new System.Drawing.Size(41, 21);
+            this.RB12_SI.Size = new System.Drawing.Size(34, 17);
             this.RB12_SI.TabIndex = 35;
             this.RB12_SI.TabStop = true;
             this.RB12_SI.Text = "Si";
@@ -378,11 +393,11 @@ namespace Saludent_Art.Vistas
             this.groupBoxP11.Controls.Add(this.RB11_NO);
             this.groupBoxP11.Controls.Add(this.RB11_SI);
             this.groupBoxP11.ForeColor = System.Drawing.Color.Black;
-            this.groupBoxP11.Location = new System.Drawing.Point(374, 205);
+            this.groupBoxP11.Location = new System.Drawing.Point(281, 167);
             this.groupBoxP11.Margin = new System.Windows.Forms.Padding(0);
             this.groupBoxP11.Name = "groupBoxP11";
             this.groupBoxP11.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBoxP11.Size = new System.Drawing.Size(336, 60);
+            this.groupBoxP11.Size = new System.Drawing.Size(252, 49);
             this.groupBoxP11.TabIndex = 121;
             this.groupBoxP11.TabStop = false;
             this.groupBoxP11.Text = "¿Mal olor o sabor en su boca?";
@@ -390,9 +405,10 @@ namespace Saludent_Art.Vistas
             // RB11_NO
             // 
             this.RB11_NO.AutoSize = true;
-            this.RB11_NO.Location = new System.Drawing.Point(55, 18);
+            this.RB11_NO.Location = new System.Drawing.Point(41, 15);
+            this.RB11_NO.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RB11_NO.Name = "RB11_NO";
-            this.RB11_NO.Size = new System.Drawing.Size(47, 21);
+            this.RB11_NO.Size = new System.Drawing.Size(39, 17);
             this.RB11_NO.TabIndex = 36;
             this.RB11_NO.TabStop = true;
             this.RB11_NO.Text = "No";
@@ -401,9 +417,10 @@ namespace Saludent_Art.Vistas
             // RB11_SI
             // 
             this.RB11_SI.AutoSize = true;
-            this.RB11_SI.Location = new System.Drawing.Point(6, 18);
+            this.RB11_SI.Location = new System.Drawing.Point(4, 15);
+            this.RB11_SI.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RB11_SI.Name = "RB11_SI";
-            this.RB11_SI.Size = new System.Drawing.Size(41, 21);
+            this.RB11_SI.Size = new System.Drawing.Size(34, 17);
             this.RB11_SI.TabIndex = 35;
             this.RB11_SI.TabStop = true;
             this.RB11_SI.Text = "Si";
@@ -416,11 +433,11 @@ namespace Saludent_Art.Vistas
             this.groupBoxP10.Controls.Add(this.RB10_NO);
             this.groupBoxP10.Controls.Add(this.RB10_SI);
             this.groupBoxP10.ForeColor = System.Drawing.Color.Black;
-            this.groupBoxP10.Location = new System.Drawing.Point(14, 205);
+            this.groupBoxP10.Location = new System.Drawing.Point(11, 167);
             this.groupBoxP10.Margin = new System.Windows.Forms.Padding(0);
             this.groupBoxP10.Name = "groupBoxP10";
             this.groupBoxP10.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBoxP10.Size = new System.Drawing.Size(336, 60);
+            this.groupBoxP10.Size = new System.Drawing.Size(252, 49);
             this.groupBoxP10.TabIndex = 120;
             this.groupBoxP10.TabStop = false;
             this.groupBoxP10.Text = "¿Molestias o dolor en su boca?";
@@ -428,9 +445,10 @@ namespace Saludent_Art.Vistas
             // RB10_NO
             // 
             this.RB10_NO.AutoSize = true;
-            this.RB10_NO.Location = new System.Drawing.Point(55, 18);
+            this.RB10_NO.Location = new System.Drawing.Point(41, 15);
+            this.RB10_NO.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RB10_NO.Name = "RB10_NO";
-            this.RB10_NO.Size = new System.Drawing.Size(47, 21);
+            this.RB10_NO.Size = new System.Drawing.Size(39, 17);
             this.RB10_NO.TabIndex = 36;
             this.RB10_NO.TabStop = true;
             this.RB10_NO.Text = "No";
@@ -439,9 +457,10 @@ namespace Saludent_Art.Vistas
             // RB10_SI
             // 
             this.RB10_SI.AutoSize = true;
-            this.RB10_SI.Location = new System.Drawing.Point(6, 18);
+            this.RB10_SI.Location = new System.Drawing.Point(4, 15);
+            this.RB10_SI.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RB10_SI.Name = "RB10_SI";
-            this.RB10_SI.Size = new System.Drawing.Size(41, 21);
+            this.RB10_SI.Size = new System.Drawing.Size(34, 17);
             this.RB10_SI.TabIndex = 35;
             this.RB10_SI.TabStop = true;
             this.RB10_SI.Text = "Si";
@@ -454,11 +473,11 @@ namespace Saludent_Art.Vistas
             this.groupBoxP7.Controls.Add(this.RB7_NO);
             this.groupBoxP7.Controls.Add(this.RB7_SI);
             this.groupBoxP7.ForeColor = System.Drawing.Color.Black;
-            this.groupBoxP7.Location = new System.Drawing.Point(14, 140);
+            this.groupBoxP7.Location = new System.Drawing.Point(11, 114);
             this.groupBoxP7.Margin = new System.Windows.Forms.Padding(0);
             this.groupBoxP7.Name = "groupBoxP7";
             this.groupBoxP7.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBoxP7.Size = new System.Drawing.Size(336, 60);
+            this.groupBoxP7.Size = new System.Drawing.Size(252, 49);
             this.groupBoxP7.TabIndex = 117;
             this.groupBoxP7.TabStop = false;
             this.groupBoxP7.Text = "¿Padece hipertensión arterial?";
@@ -466,9 +485,10 @@ namespace Saludent_Art.Vistas
             // RB7_NO
             // 
             this.RB7_NO.AutoSize = true;
-            this.RB7_NO.Location = new System.Drawing.Point(55, 18);
+            this.RB7_NO.Location = new System.Drawing.Point(41, 15);
+            this.RB7_NO.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RB7_NO.Name = "RB7_NO";
-            this.RB7_NO.Size = new System.Drawing.Size(47, 21);
+            this.RB7_NO.Size = new System.Drawing.Size(39, 17);
             this.RB7_NO.TabIndex = 36;
             this.RB7_NO.TabStop = true;
             this.RB7_NO.Text = "No";
@@ -477,9 +497,10 @@ namespace Saludent_Art.Vistas
             // RB7_SI
             // 
             this.RB7_SI.AutoSize = true;
-            this.RB7_SI.Location = new System.Drawing.Point(6, 18);
+            this.RB7_SI.Location = new System.Drawing.Point(4, 15);
+            this.RB7_SI.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RB7_SI.Name = "RB7_SI";
-            this.RB7_SI.Size = new System.Drawing.Size(41, 21);
+            this.RB7_SI.Size = new System.Drawing.Size(34, 17);
             this.RB7_SI.TabIndex = 35;
             this.RB7_SI.TabStop = true;
             this.RB7_SI.Text = "Si";
@@ -492,11 +513,11 @@ namespace Saludent_Art.Vistas
             this.groupBoxP6.Controls.Add(this.RB6_NO);
             this.groupBoxP6.Controls.Add(this.RB6_SI);
             this.groupBoxP6.ForeColor = System.Drawing.Color.Black;
-            this.groupBoxP6.Location = new System.Drawing.Point(731, 75);
+            this.groupBoxP6.Location = new System.Drawing.Point(549, 61);
             this.groupBoxP6.Margin = new System.Windows.Forms.Padding(0);
             this.groupBoxP6.Name = "groupBoxP6";
             this.groupBoxP6.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBoxP6.Size = new System.Drawing.Size(336, 60);
+            this.groupBoxP6.Size = new System.Drawing.Size(252, 49);
             this.groupBoxP6.TabIndex = 118;
             this.groupBoxP6.TabStop = false;
             this.groupBoxP6.Text = "¿Padece diabetes mellitus?";
@@ -504,9 +525,10 @@ namespace Saludent_Art.Vistas
             // RB6_NO
             // 
             this.RB6_NO.AutoSize = true;
-            this.RB6_NO.Location = new System.Drawing.Point(55, 18);
+            this.RB6_NO.Location = new System.Drawing.Point(41, 15);
+            this.RB6_NO.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RB6_NO.Name = "RB6_NO";
-            this.RB6_NO.Size = new System.Drawing.Size(47, 21);
+            this.RB6_NO.Size = new System.Drawing.Size(39, 17);
             this.RB6_NO.TabIndex = 36;
             this.RB6_NO.TabStop = true;
             this.RB6_NO.Text = "No";
@@ -515,9 +537,10 @@ namespace Saludent_Art.Vistas
             // RB6_SI
             // 
             this.RB6_SI.AutoSize = true;
-            this.RB6_SI.Location = new System.Drawing.Point(6, 18);
+            this.RB6_SI.Location = new System.Drawing.Point(4, 15);
+            this.RB6_SI.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RB6_SI.Name = "RB6_SI";
-            this.RB6_SI.Size = new System.Drawing.Size(41, 21);
+            this.RB6_SI.Size = new System.Drawing.Size(34, 17);
             this.RB6_SI.TabIndex = 35;
             this.RB6_SI.TabStop = true;
             this.RB6_SI.Text = "Si";
@@ -530,11 +553,11 @@ namespace Saludent_Art.Vistas
             this.groupBoxP5.Controls.Add(this.RB5_NO);
             this.groupBoxP5.Controls.Add(this.RB5_SI);
             this.groupBoxP5.ForeColor = System.Drawing.Color.Black;
-            this.groupBoxP5.Location = new System.Drawing.Point(374, 75);
+            this.groupBoxP5.Location = new System.Drawing.Point(281, 61);
             this.groupBoxP5.Margin = new System.Windows.Forms.Padding(0);
             this.groupBoxP5.Name = "groupBoxP5";
             this.groupBoxP5.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBoxP5.Size = new System.Drawing.Size(336, 60);
+            this.groupBoxP5.Size = new System.Drawing.Size(252, 49);
             this.groupBoxP5.TabIndex = 119;
             this.groupBoxP5.TabStop = false;
             this.groupBoxP5.Text = "¿Padece problemas con su sangrado y/o coagulación?";
@@ -543,9 +566,10 @@ namespace Saludent_Art.Vistas
             // 
             this.RB5_NO.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.RB5_NO.AutoSize = true;
-            this.RB5_NO.Location = new System.Drawing.Point(160, 22);
+            this.RB5_NO.Location = new System.Drawing.Point(120, 18);
+            this.RB5_NO.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RB5_NO.Name = "RB5_NO";
-            this.RB5_NO.Size = new System.Drawing.Size(47, 21);
+            this.RB5_NO.Size = new System.Drawing.Size(39, 17);
             this.RB5_NO.TabIndex = 36;
             this.RB5_NO.TabStop = true;
             this.RB5_NO.Text = "No";
@@ -555,9 +579,10 @@ namespace Saludent_Art.Vistas
             // 
             this.RB5_SI.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.RB5_SI.AutoSize = true;
-            this.RB5_SI.Location = new System.Drawing.Point(111, 22);
+            this.RB5_SI.Location = new System.Drawing.Point(83, 18);
+            this.RB5_SI.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RB5_SI.Name = "RB5_SI";
-            this.RB5_SI.Size = new System.Drawing.Size(41, 21);
+            this.RB5_SI.Size = new System.Drawing.Size(34, 17);
             this.RB5_SI.TabIndex = 35;
             this.RB5_SI.TabStop = true;
             this.RB5_SI.Text = "Si";
@@ -570,11 +595,11 @@ namespace Saludent_Art.Vistas
             this.groupBoxP4.Controls.Add(this.RB4_NO);
             this.groupBoxP4.Controls.Add(this.RB4_SI);
             this.groupBoxP4.ForeColor = System.Drawing.Color.Black;
-            this.groupBoxP4.Location = new System.Drawing.Point(14, 75);
+            this.groupBoxP4.Location = new System.Drawing.Point(11, 61);
             this.groupBoxP4.Margin = new System.Windows.Forms.Padding(0);
             this.groupBoxP4.Name = "groupBoxP4";
             this.groupBoxP4.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBoxP4.Size = new System.Drawing.Size(336, 60);
+            this.groupBoxP4.Size = new System.Drawing.Size(252, 49);
             this.groupBoxP4.TabIndex = 115;
             this.groupBoxP4.TabStop = false;
             this.groupBoxP4.Text = "¿Reacciones con anestesia local o dental?";
@@ -583,9 +608,10 @@ namespace Saludent_Art.Vistas
             // 
             this.RB4_NO.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.RB4_NO.AutoSize = true;
-            this.RB4_NO.Location = new System.Drawing.Point(132, 22);
+            this.RB4_NO.Location = new System.Drawing.Point(99, 18);
+            this.RB4_NO.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RB4_NO.Name = "RB4_NO";
-            this.RB4_NO.Size = new System.Drawing.Size(47, 21);
+            this.RB4_NO.Size = new System.Drawing.Size(39, 17);
             this.RB4_NO.TabIndex = 36;
             this.RB4_NO.TabStop = true;
             this.RB4_NO.Text = "No";
@@ -595,9 +621,10 @@ namespace Saludent_Art.Vistas
             // 
             this.RB4_SI.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.RB4_SI.AutoSize = true;
-            this.RB4_SI.Location = new System.Drawing.Point(83, 22);
+            this.RB4_SI.Location = new System.Drawing.Point(62, 18);
+            this.RB4_SI.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RB4_SI.Name = "RB4_SI";
-            this.RB4_SI.Size = new System.Drawing.Size(41, 21);
+            this.RB4_SI.Size = new System.Drawing.Size(34, 17);
             this.RB4_SI.TabIndex = 35;
             this.RB4_SI.TabStop = true;
             this.RB4_SI.Text = "Si";
@@ -611,11 +638,11 @@ namespace Saludent_Art.Vistas
             this.groupBoxP3.Controls.Add(this.RB3_SI);
             this.groupBoxP3.Controls.Add(this.txtConsumeMedicamento);
             this.groupBoxP3.ForeColor = System.Drawing.Color.Black;
-            this.groupBoxP3.Location = new System.Drawing.Point(731, 10);
+            this.groupBoxP3.Location = new System.Drawing.Point(549, 8);
             this.groupBoxP3.Margin = new System.Windows.Forms.Padding(0);
             this.groupBoxP3.Name = "groupBoxP3";
             this.groupBoxP3.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBoxP3.Size = new System.Drawing.Size(336, 60);
+            this.groupBoxP3.Size = new System.Drawing.Size(252, 49);
             this.groupBoxP3.TabIndex = 113;
             this.groupBoxP3.TabStop = false;
             this.groupBoxP3.Text = "¿Consume algún medicamento?";
@@ -623,9 +650,10 @@ namespace Saludent_Art.Vistas
             // RB3_NO
             // 
             this.RB3_NO.AutoSize = true;
-            this.RB3_NO.Location = new System.Drawing.Point(55, 18);
+            this.RB3_NO.Location = new System.Drawing.Point(41, 15);
+            this.RB3_NO.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RB3_NO.Name = "RB3_NO";
-            this.RB3_NO.Size = new System.Drawing.Size(47, 21);
+            this.RB3_NO.Size = new System.Drawing.Size(39, 17);
             this.RB3_NO.TabIndex = 36;
             this.RB3_NO.TabStop = true;
             this.RB3_NO.Text = "No";
@@ -635,9 +663,10 @@ namespace Saludent_Art.Vistas
             // RB3_SI
             // 
             this.RB3_SI.AutoSize = true;
-            this.RB3_SI.Location = new System.Drawing.Point(6, 18);
+            this.RB3_SI.Location = new System.Drawing.Point(4, 15);
+            this.RB3_SI.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RB3_SI.Name = "RB3_SI";
-            this.RB3_SI.Size = new System.Drawing.Size(41, 21);
+            this.RB3_SI.Size = new System.Drawing.Size(34, 17);
             this.RB3_SI.TabIndex = 35;
             this.RB3_SI.TabStop = true;
             this.RB3_SI.Text = "Si";
@@ -646,9 +675,10 @@ namespace Saludent_Art.Vistas
             // 
             // txtConsumeMedicamento
             // 
-            this.txtConsumeMedicamento.Location = new System.Drawing.Point(111, 20);
+            this.txtConsumeMedicamento.Location = new System.Drawing.Point(83, 16);
+            this.txtConsumeMedicamento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtConsumeMedicamento.Name = "txtConsumeMedicamento";
-            this.txtConsumeMedicamento.Size = new System.Drawing.Size(199, 22);
+            this.txtConsumeMedicamento.Size = new System.Drawing.Size(150, 20);
             this.txtConsumeMedicamento.TabIndex = 10;
             this.txtConsumeMedicamento.TextChanged += new System.EventHandler(this.txtConsumeMedicamento_TextChanged);
             // 
@@ -660,29 +690,31 @@ namespace Saludent_Art.Vistas
             this.groupBoxP9.Controls.Add(this.RB9_NO);
             this.groupBoxP9.Controls.Add(this.RB9_SI);
             this.groupBoxP9.ForeColor = System.Drawing.Color.Black;
-            this.groupBoxP9.Location = new System.Drawing.Point(731, 140);
+            this.groupBoxP9.Location = new System.Drawing.Point(549, 114);
             this.groupBoxP9.Margin = new System.Windows.Forms.Padding(0);
             this.groupBoxP9.Name = "groupBoxP9";
             this.groupBoxP9.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBoxP9.Size = new System.Drawing.Size(336, 60);
+            this.groupBoxP9.Size = new System.Drawing.Size(252, 49);
             this.groupBoxP9.TabIndex = 116;
             this.groupBoxP9.TabStop = false;
             this.groupBoxP9.Text = "¿Está usted embarazada?";
             // 
             // txtEmbarazada
             // 
-            this.txtEmbarazada.Location = new System.Drawing.Point(111, 19);
+            this.txtEmbarazada.Location = new System.Drawing.Point(83, 15);
+            this.txtEmbarazada.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtEmbarazada.Name = "txtEmbarazada";
-            this.txtEmbarazada.Size = new System.Drawing.Size(199, 22);
+            this.txtEmbarazada.Size = new System.Drawing.Size(150, 20);
             this.txtEmbarazada.TabIndex = 37;
             this.txtEmbarazada.TextChanged += new System.EventHandler(this.txtEmbarazada_TextChanged);
             // 
             // RB9_NO
             // 
             this.RB9_NO.AutoSize = true;
-            this.RB9_NO.Location = new System.Drawing.Point(55, 18);
+            this.RB9_NO.Location = new System.Drawing.Point(41, 15);
+            this.RB9_NO.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RB9_NO.Name = "RB9_NO";
-            this.RB9_NO.Size = new System.Drawing.Size(47, 21);
+            this.RB9_NO.Size = new System.Drawing.Size(39, 17);
             this.RB9_NO.TabIndex = 36;
             this.RB9_NO.TabStop = true;
             this.RB9_NO.Text = "No";
@@ -692,9 +724,10 @@ namespace Saludent_Art.Vistas
             // RB9_SI
             // 
             this.RB9_SI.AutoSize = true;
-            this.RB9_SI.Location = new System.Drawing.Point(6, 18);
+            this.RB9_SI.Location = new System.Drawing.Point(4, 15);
+            this.RB9_SI.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RB9_SI.Name = "RB9_SI";
-            this.RB9_SI.Size = new System.Drawing.Size(41, 21);
+            this.RB9_SI.Size = new System.Drawing.Size(34, 17);
             this.RB9_SI.TabIndex = 35;
             this.RB9_SI.TabStop = true;
             this.RB9_SI.Text = "Si";
@@ -709,11 +742,11 @@ namespace Saludent_Art.Vistas
             this.groupBoxP8.Controls.Add(this.RB8_SI);
             this.groupBoxP8.Controls.Add(this.txtOtraEnfermedad);
             this.groupBoxP8.ForeColor = System.Drawing.Color.Black;
-            this.groupBoxP8.Location = new System.Drawing.Point(374, 140);
+            this.groupBoxP8.Location = new System.Drawing.Point(281, 114);
             this.groupBoxP8.Margin = new System.Windows.Forms.Padding(0);
             this.groupBoxP8.Name = "groupBoxP8";
             this.groupBoxP8.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBoxP8.Size = new System.Drawing.Size(336, 60);
+            this.groupBoxP8.Size = new System.Drawing.Size(252, 49);
             this.groupBoxP8.TabIndex = 114;
             this.groupBoxP8.TabStop = false;
             this.groupBoxP8.Text = "¿Padece alguna otra enfermedad?";
@@ -721,9 +754,10 @@ namespace Saludent_Art.Vistas
             // RB8_NO
             // 
             this.RB8_NO.AutoSize = true;
-            this.RB8_NO.Location = new System.Drawing.Point(55, 18);
+            this.RB8_NO.Location = new System.Drawing.Point(41, 15);
+            this.RB8_NO.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RB8_NO.Name = "RB8_NO";
-            this.RB8_NO.Size = new System.Drawing.Size(47, 21);
+            this.RB8_NO.Size = new System.Drawing.Size(39, 17);
             this.RB8_NO.TabIndex = 36;
             this.RB8_NO.TabStop = true;
             this.RB8_NO.Text = "No";
@@ -733,9 +767,10 @@ namespace Saludent_Art.Vistas
             // RB8_SI
             // 
             this.RB8_SI.AutoSize = true;
-            this.RB8_SI.Location = new System.Drawing.Point(6, 18);
+            this.RB8_SI.Location = new System.Drawing.Point(4, 15);
+            this.RB8_SI.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RB8_SI.Name = "RB8_SI";
-            this.RB8_SI.Size = new System.Drawing.Size(41, 21);
+            this.RB8_SI.Size = new System.Drawing.Size(34, 17);
             this.RB8_SI.TabIndex = 35;
             this.RB8_SI.TabStop = true;
             this.RB8_SI.Text = "Si";
@@ -744,9 +779,10 @@ namespace Saludent_Art.Vistas
             // 
             // txtOtraEnfermedad
             // 
-            this.txtOtraEnfermedad.Location = new System.Drawing.Point(111, 20);
+            this.txtOtraEnfermedad.Location = new System.Drawing.Point(83, 16);
+            this.txtOtraEnfermedad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtOtraEnfermedad.Name = "txtOtraEnfermedad";
-            this.txtOtraEnfermedad.Size = new System.Drawing.Size(199, 22);
+            this.txtOtraEnfermedad.Size = new System.Drawing.Size(150, 20);
             this.txtOtraEnfermedad.TabIndex = 20;
             this.txtOtraEnfermedad.TextChanged += new System.EventHandler(this.txtOtraEnfermedad_TextChanged);
             // 
@@ -758,11 +794,11 @@ namespace Saludent_Art.Vistas
             this.groupBoxP2.Controls.Add(this.RB2_SI);
             this.groupBoxP2.Controls.Add(this.txtIntervencionQuirurgica);
             this.groupBoxP2.ForeColor = System.Drawing.Color.Black;
-            this.groupBoxP2.Location = new System.Drawing.Point(374, 10);
+            this.groupBoxP2.Location = new System.Drawing.Point(281, 8);
             this.groupBoxP2.Margin = new System.Windows.Forms.Padding(0);
             this.groupBoxP2.Name = "groupBoxP2";
             this.groupBoxP2.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBoxP2.Size = new System.Drawing.Size(336, 60);
+            this.groupBoxP2.Size = new System.Drawing.Size(252, 49);
             this.groupBoxP2.TabIndex = 111;
             this.groupBoxP2.TabStop = false;
             this.groupBoxP2.Text = "¿Ha sido intervenido quirúrgicamente?";
@@ -770,9 +806,10 @@ namespace Saludent_Art.Vistas
             // RB2_NO
             // 
             this.RB2_NO.AutoSize = true;
-            this.RB2_NO.Location = new System.Drawing.Point(55, 18);
+            this.RB2_NO.Location = new System.Drawing.Point(41, 15);
+            this.RB2_NO.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RB2_NO.Name = "RB2_NO";
-            this.RB2_NO.Size = new System.Drawing.Size(47, 21);
+            this.RB2_NO.Size = new System.Drawing.Size(39, 17);
             this.RB2_NO.TabIndex = 36;
             this.RB2_NO.TabStop = true;
             this.RB2_NO.Text = "No";
@@ -782,9 +819,10 @@ namespace Saludent_Art.Vistas
             // RB2_SI
             // 
             this.RB2_SI.AutoSize = true;
-            this.RB2_SI.Location = new System.Drawing.Point(6, 18);
+            this.RB2_SI.Location = new System.Drawing.Point(4, 15);
+            this.RB2_SI.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RB2_SI.Name = "RB2_SI";
-            this.RB2_SI.Size = new System.Drawing.Size(41, 21);
+            this.RB2_SI.Size = new System.Drawing.Size(34, 17);
             this.RB2_SI.TabIndex = 35;
             this.RB2_SI.TabStop = true;
             this.RB2_SI.Text = "Si";
@@ -793,9 +831,10 @@ namespace Saludent_Art.Vistas
             // 
             // txtIntervencionQuirurgica
             // 
-            this.txtIntervencionQuirurgica.Location = new System.Drawing.Point(111, 20);
+            this.txtIntervencionQuirurgica.Location = new System.Drawing.Point(83, 16);
+            this.txtIntervencionQuirurgica.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtIntervencionQuirurgica.Name = "txtIntervencionQuirurgica";
-            this.txtIntervencionQuirurgica.Size = new System.Drawing.Size(199, 22);
+            this.txtIntervencionQuirurgica.Size = new System.Drawing.Size(150, 20);
             this.txtIntervencionQuirurgica.TabIndex = 8;
             this.txtIntervencionQuirurgica.TextChanged += new System.EventHandler(this.txtIntervencionQuirurgica_TextChanged);
             // 
@@ -804,10 +843,11 @@ namespace Saludent_Art.Vistas
             this.ListaConsultas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(227)))), ((int)(((byte)(231)))));
             this.ListaConsultas.Controls.Add(this.panelTablaDatosClinicos);
             this.ListaConsultas.Controls.Add(this.panelBordeArribaTab2);
-            this.ListaConsultas.Location = new System.Drawing.Point(4, 25);
+            this.ListaConsultas.Location = new System.Drawing.Point(4, 22);
+            this.ListaConsultas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ListaConsultas.Name = "ListaConsultas";
-            this.ListaConsultas.Padding = new System.Windows.Forms.Padding(3);
-            this.ListaConsultas.Size = new System.Drawing.Size(1087, 684);
+            this.ListaConsultas.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ListaConsultas.Size = new System.Drawing.Size(814, 554);
             this.ListaConsultas.TabIndex = 1;
             this.ListaConsultas.Text = "Lista de Consultas";
             // 
@@ -815,9 +855,10 @@ namespace Saludent_Art.Vistas
             // 
             this.panelTablaDatosClinicos.Controls.Add(this.consultasDataGridView);
             this.panelTablaDatosClinicos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelTablaDatosClinicos.Location = new System.Drawing.Point(3, 50);
+            this.panelTablaDatosClinicos.Location = new System.Drawing.Point(2, 40);
+            this.panelTablaDatosClinicos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelTablaDatosClinicos.Name = "panelTablaDatosClinicos";
-            this.panelTablaDatosClinicos.Size = new System.Drawing.Size(1081, 631);
+            this.panelTablaDatosClinicos.Size = new System.Drawing.Size(810, 512);
             this.panelTablaDatosClinicos.TabIndex = 15;
             // 
             // consultasDataGridView
@@ -829,35 +870,35 @@ namespace Saludent_Art.Vistas
             this.consultasDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.consultasDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.consultasDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(74)))), ((int)(((byte)(86)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(74)))), ((int)(((byte)(86)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.consultasDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(74)))), ((int)(((byte)(86)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(74)))), ((int)(((byte)(86)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.consultasDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.consultasDataGridView.ColumnHeadersHeight = 35;
             this.consultasDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.consultasDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.consultasDataGridView.EnableHeadersVisualStyles = false;
             this.consultasDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(45)))), ((int)(((byte)(52)))));
             this.consultasDataGridView.Location = new System.Drawing.Point(0, 0);
-            this.consultasDataGridView.Margin = new System.Windows.Forms.Padding(10);
+            this.consultasDataGridView.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
             this.consultasDataGridView.Name = "consultasDataGridView";
             this.consultasDataGridView.ReadOnly = true;
             this.consultasDataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.consultasDataGridView.RowHeadersVisible = false;
             this.consultasDataGridView.RowHeadersWidth = 51;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(106)))), ((int)(((byte)(114)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(111)))), ((int)(((byte)(130)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
-            this.consultasDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(106)))), ((int)(((byte)(114)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(111)))), ((int)(((byte)(130)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.consultasDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.consultasDataGridView.RowTemplate.Height = 24;
             this.consultasDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.consultasDataGridView.Size = new System.Drawing.Size(1081, 631);
+            this.consultasDataGridView.Size = new System.Drawing.Size(810, 512);
             this.consultasDataGridView.TabIndex = 2;
             this.consultasDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.consultasDataGridView_CellClick);
             // 
@@ -866,17 +907,19 @@ namespace Saludent_Art.Vistas
             this.panelBordeArribaTab2.Controls.Add(this.txtBuscar);
             this.panelBordeArribaTab2.Controls.Add(this.label1);
             this.panelBordeArribaTab2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBordeArribaTab2.Location = new System.Drawing.Point(3, 3);
+            this.panelBordeArribaTab2.Location = new System.Drawing.Point(2, 2);
+            this.panelBordeArribaTab2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelBordeArribaTab2.Name = "panelBordeArribaTab2";
-            this.panelBordeArribaTab2.Size = new System.Drawing.Size(1081, 47);
+            this.panelBordeArribaTab2.Size = new System.Drawing.Size(810, 38);
             this.panelBordeArribaTab2.TabIndex = 6;
             // 
             // txtBuscar
             // 
             this.txtBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtBuscar.Location = new System.Drawing.Point(172, 10);
+            this.txtBuscar.Location = new System.Drawing.Point(138, 8);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(135, 30);
+            this.txtBuscar.Size = new System.Drawing.Size(102, 26);
             this.txtBuscar.TabIndex = 3;
             this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
@@ -885,23 +928,25 @@ namespace Saludent_Art.Vistas
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(12, 13);
+            this.label1.Location = new System.Drawing.Point(9, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(154, 25);
+            this.label1.Size = new System.Drawing.Size(125, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "Buscar Paciente";
             // 
             // Consultas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(227)))), ((int)(((byte)(231)))));
-            this.ClientSize = new System.Drawing.Size(1125, 743);
+            this.ClientSize = new System.Drawing.Size(844, 604);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panelBordeArriba);
             this.Controls.Add(this.panelBordeDerecha);
             this.Controls.Add(this.panelBordeAbajo);
             this.Controls.Add(this.panelBordeIzquierda);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Consultas";
             this.Text = "Consultas";
             this.Load += new System.EventHandler(this.Consultas_Load);
