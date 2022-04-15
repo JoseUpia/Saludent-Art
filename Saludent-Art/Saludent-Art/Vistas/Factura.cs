@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using Saludent_Art.Controladores;
+using System;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Drawing.Printing;
-using Saludent_Art.Controladores;
+using System.Windows.Forms;
 
 
 namespace Saludent_Art.Vistas
@@ -30,19 +24,19 @@ namespace Saludent_Art.Vistas
         private void Imprimir(object sender, PrintPageEventArgs e)
         {
             Font font = new Font("Palatino Linotype", 12);
-            
+
             int ancho = 350;
             int y = 166;
 
-            e.Graphics.DrawImage(Properties.Resources.FacturaSaludent_ArtVacia ,new Rectangle(10, 10, 450, 700));
+            e.Graphics.DrawImage(Properties.Resources.FacturaSaludent_ArtVacia, new Rectangle(10, 10, 450, 700));
 
             //Datos Superiores de la factura
-            e.Graphics.DrawString("C/ Isabel La Católica (Los Alemanes)", new Font("Palatino Linotype", 40, GraphicsUnit.Document),Brushes.SteelBlue, new RectangleF(235, 21, ancho, 30));
+            e.Graphics.DrawString("C/ Isabel La Católica (Los Alemanes)", new Font("Palatino Linotype", 40, GraphicsUnit.Document), Brushes.SteelBlue, new RectangleF(235, 21, ancho, 30));
             e.Graphics.DrawString("#39, Próximo al juzgado de", new Font("Palatino Linotype", 40, GraphicsUnit.Document), Brushes.SteelBlue, new RectangleF(272, 37, ancho, 30));
             e.Graphics.DrawString("Paz, Villa Altagracia.", new Font("Palatino Linotype", 40, GraphicsUnit.Document), Brushes.SteelBlue, new RectangleF(290, 52, ancho, 30));
 
             e.Graphics.DrawString("Tels.:", new Font("Palatino Linotype", 18, GraphicsUnit.World), Brushes.SteelBlue, new RectangleF(280, 80, ancho, 30));
-            e.Graphics.DrawString("809-288-8700", new Font("Palatino Linotype",18,GraphicsUnit.World), Brushes.SteelBlue, new RectangleF(326, 83, ancho, 30));
+            e.Graphics.DrawString("809-288-8700", new Font("Palatino Linotype", 18, GraphicsUnit.World), Brushes.SteelBlue, new RectangleF(326, 83, ancho, 30));
             e.Graphics.DrawString("829-587-9298", new Font("Palatino Linotype", 18, GraphicsUnit.World), Brushes.SteelBlue, new RectangleF(304, 102, ancho, 30));
 
             //Procedimientos facturados
@@ -65,12 +59,12 @@ namespace Saludent_Art.Vistas
         private void guardar_Click(object sender, EventArgs e)
         {
 
-            
 
-            
+
+
             try
             {
-                if(nombreTextBox.Text != "" && PrecioTotal.Text != "0")
+                if (nombreTextBox.Text != "" && PrecioTotal.Text != "0")
                 {
                     facturaController.Facturar(nombreTextBox.Text, apellidoTextBox.Text, fechaEntradaDateTimePicker.Text);
                     HacerImpresion();
@@ -80,7 +74,7 @@ namespace Saludent_Art.Vistas
                     MessageBox.Show("¡Faltan datos en la factura!", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -99,7 +93,8 @@ namespace Saludent_Art.Vistas
             int mes = Convert.ToInt16(mesString);
             string mesLetras = "No Encontrado";
 
-            switch (mes) {
+            switch (mes)
+            {
                 case 1:
                     mesLetras = "Enero";
                     return mesLetras;
@@ -161,9 +156,10 @@ namespace Saludent_Art.Vistas
         }
         private void CalcularTotal()
         {
-            string[] procedimientosSelecionados = new string[listBoxProcedimientosSelecionados.Items.Count];   
+            string[] procedimientosSelecionados = new string[listBoxProcedimientosSelecionados.Items.Count];
 
-            for (int i= 0; i <= listBoxProcedimientosSelecionados.Items.Count - 1; i++){
+            for (int i = 0; i <= listBoxProcedimientosSelecionados.Items.Count - 1; i++)
+            {
                 procedimientosSelecionados[i] = listBoxProcedimientosSelecionados.Items[i].ToString();
             }
             PrecioTotal.Text = procedimientoController.CalcularTotal(procedimientosSelecionados).ToString();
@@ -183,7 +179,7 @@ namespace Saludent_Art.Vistas
 
             Procedimientos = procedimientoController.CargarProcedimientos();
 
-            for(int i = 0; i< Procedimientos.Length; i++)
+            for (int i = 0; i < Procedimientos.Length; i++)
             {
                 listBoxProcedimientos.Items.Add(Procedimientos[i].ToString());
             }
@@ -254,7 +250,7 @@ namespace Saludent_Art.Vistas
                     MessageBox.Show("¡Selecione un procedimiento!", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -275,7 +271,7 @@ namespace Saludent_Art.Vistas
                     MessageBox.Show("¡Selecione un procedimiento!", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

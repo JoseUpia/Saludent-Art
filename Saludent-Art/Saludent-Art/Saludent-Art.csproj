@@ -52,7 +52,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>Logo_Saludent-Art.ico</ApplicationIcon>
@@ -175,6 +175,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_Saludent_ArtDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Saludent_ArtDataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Vistas\GestionarFactura.resx">
       <DependentUpon>GestionarFactura.cs</DependentUpon>
     </EmbeddedResource>
@@ -218,7 +223,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Saludent-Art_TemporaryKey.pfx" />
+    <None Include="_Saludent_ArtDataSet.xsc">
+      <DependentUpon>_Saludent_ArtDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_Saludent_ArtDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Saludent_ArtDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Saludent_ArtDataSet.xss">
+      <DependentUpon>_Saludent_ArtDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -230,16 +245,6 @@
     <None Include="Resources\Flecha atras.png" />
   </ItemGroup>
   <ItemGroup>
-    <PublishFile Include="DataBase\Saludent-Art.mdf">
-      <Visible>False</Visible>
-      <Group>
-      </Group>
-      <TargetPath>
-      </TargetPath>
-      <PublishState>DataFile</PublishState>
-      <IncludeHash>True</IncludeHash>
-      <FileType>File</FileType>
-    </PublishFile>
     <PublishFile Include="DataBase\Saludent-Art_log.ldf">
       <Visible>False</Visible>
       <Group>
@@ -318,5 +323,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

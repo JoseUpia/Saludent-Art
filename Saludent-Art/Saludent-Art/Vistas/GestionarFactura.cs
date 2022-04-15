@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Saludent_Art.Controladores;
+using System;
 using System.Windows.Forms;
-using Saludent_Art.Controladores;
 
 namespace Saludent_Art.Vistas
 {
@@ -39,7 +32,7 @@ namespace Saludent_Art.Vistas
             string[] DatosFactura = new string[3];
 
             procedimientosDataGridView.DataSource = procedimientoController.ProcedimientosFacturados(facturasDataGridView.CurrentRow.Cells[0].Value.ToString());
-            DatosFactura =  facturaController.DatosFactura(facturasDataGridView.CurrentRow.Cells[1].Value.ToString());
+            DatosFactura = facturaController.DatosFactura(facturasDataGridView.CurrentRow.Cells[1].Value.ToString());
             fechaFacturaDateTimePicker.Text = facturasDataGridView.CurrentRow.Cells[2].Value.ToString();
 
             nombreTextBox.Text = DatosFactura[0];

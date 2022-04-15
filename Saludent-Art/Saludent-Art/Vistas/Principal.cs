@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using FontAwesome.Sharp;
+﻿using FontAwesome.Sharp;
 using Saludent_Art.Vistas;
+using System;
+using System.Drawing;
+using System.Runtime.InteropServices;
+using System.Windows.Forms;
 
 namespace Saludent_Art
 {
@@ -32,7 +26,7 @@ namespace Saludent_Art
             this.ControlBox = false;
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
-            
+
         }
         private void ActivarBotone(object remitenteBtn)
         {
@@ -48,7 +42,7 @@ namespace Saludent_Art
                 BotonActual.TextImageRelation = TextImageRelation.TextBeforeImage;
                 BotonActual.ImageAlign = ContentAlignment.MiddleRight;
                 //Bordes izquierdos del botón
-                BordeIzquierdo.BackColor = Color.FromArgb(255,255,255);
+                BordeIzquierdo.BackColor = Color.FromArgb(255, 255, 255);
                 BordeIzquierdo.Location = new Point(0, BotonActual.Location.Y);
                 BordeIzquierdo.Visible = true;
                 BordeIzquierdo.BringToFront();
@@ -57,11 +51,11 @@ namespace Saludent_Art
         private void DisableButton()
         {
             if (BotonActual != null)
-            { 
+            {
                 BotonActual.BackColor = Color.FromArgb(19, 111, 130);
-                BotonActual.ForeColor = Color.FromArgb(255,255,255);
+                BotonActual.ForeColor = Color.FromArgb(255, 255, 255);
                 BotonActual.TextAlign = ContentAlignment.MiddleLeft;
-                BotonActual.IconColor = Color.FromArgb(255,255,255);
+                BotonActual.IconColor = Color.FromArgb(255, 255, 255);
                 BotonActual.TextImageRelation = TextImageRelation.ImageBeforeText;
                 BotonActual.ImageAlign = ContentAlignment.MiddleLeft;
             }
@@ -105,7 +99,7 @@ namespace Saludent_Art
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
-            if(WindowState == FormWindowState.Normal)
+            if (WindowState == FormWindowState.Normal)
             {
                 Restaurar.Visible = false;
                 Maximizar.Visible = true;
@@ -127,7 +121,7 @@ namespace Saludent_Art
             PanelCentral.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-            
+
         }
         private void NuevaConsulta_Click(object sender, EventArgs e)
         {

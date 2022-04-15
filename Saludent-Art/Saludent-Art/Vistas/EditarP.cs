@@ -1,12 +1,7 @@
 ﻿using Saludent_Art.Controladores;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Saludent_Art
@@ -78,7 +73,7 @@ namespace Saludent_Art
         {
             try
             {
-                if(nombreTextBox.Text == "" || apellidoTextBox.Text == "" || edadTextBox.Text == "" || generoComboBox.Text == "" || correoTextBox.Text == "" || telefonoTextBox.Text == "" || direccionTextBox.Text == "")
+                if (nombreTextBox.Text == "" || apellidoTextBox.Text == "" || edadTextBox.Text == "" || generoComboBox.Text == "" || correoTextBox.Text == "" || telefonoTextBox.Text == "" || direccionTextBox.Text == "")
                 {
                     MessageBox.Show("¡Existe algun campos vacío!", "Campos vacíos", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     RefrescarPacientes();
@@ -92,7 +87,7 @@ namespace Saludent_Art
                     Limpiar();
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -101,7 +96,7 @@ namespace Saludent_Art
         private void Limpiar()
         {
             IdPaciente = "";
-            txtPaciente.Clear();   
+            txtPaciente.Clear();
             nombreTextBox.Clear();
             apellidoTextBox.Clear();
             edadTextBox.Clear();
@@ -140,21 +135,21 @@ namespace Saludent_Art
                         RefrescarPacientes();
 
                         IdPaciente = pacientesDataGridView.CurrentRow.Cells[0].Value.ToString();
-                    
+
                     }
 
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex, "Error", MessageBoxButtons.OK ,MessageBoxIcon.Error);
+                MessageBox.Show("Error: " + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
 
         private void txtPaciente_TextChanged(object sender, EventArgs e)
         {
-            if(txtPaciente.Text == "")
+            if (txtPaciente.Text == "")
             {
                 RefrescarPacientes();
             }

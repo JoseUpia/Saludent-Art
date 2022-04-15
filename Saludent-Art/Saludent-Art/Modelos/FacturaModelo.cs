@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Saludent_Art.Modelos
 {
@@ -32,7 +28,7 @@ namespace Saludent_Art.Modelos
         public void Facturar(int IdPaciente, string FechaFactura)
         {
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "INSERT INTO Factura VALUES("+IdPaciente+", '"+FechaFactura+"')";
+            comando.CommandText = "INSERT INTO Factura VALUES(" + IdPaciente + ", '" + FechaFactura + "')";
             comando.CommandType = CommandType.Text;
 
             leer = comando.ExecuteReader();
@@ -44,7 +40,7 @@ namespace Saludent_Art.Modelos
         {
             tabla.Rows.Clear();
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "SELECT IdFactura FROM Factura WHERE IdPaciente = "+IdPaciente+" AND Fecha = '"+Fecha+"'";
+            comando.CommandText = "SELECT IdFactura FROM Factura WHERE IdPaciente = " + IdPaciente + " AND Fecha = '" + Fecha + "'";
             comando.CommandType = CommandType.Text;
 
             leer = comando.ExecuteReader();

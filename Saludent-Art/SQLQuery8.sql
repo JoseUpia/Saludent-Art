@@ -1,0 +1,8 @@
+﻿INSERT INTO Procedimientos(nom_Procedimiento, Precio) 
+VALUES('Ortodoncia (Brackets)', 10000)
+INSERT INTO Procedimientos(nom_Procedimiento, Precio) 
+VALUES('Ortodoncia (Brackets)', 10000)
+INSERT INTO Procedimientos(nom_Procedimiento, Precio) 
+VALUES('Ortodoncia (Brackets)', 10000)
+INSERT INTO Procedimientos(nom_Procedimiento, Precio) 
+VALUES('Ortodoncia (Brackets)', 10000)

@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using Saludent_Art.Controladores;
+using System;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Saludent_Art.Controladores;
 
 namespace Saludent_Art.Vistas
 {
@@ -103,7 +97,7 @@ namespace Saludent_Art.Vistas
         {
             string[] RespuestaFinal = Respuestas;
 
-            if (RespuestaFinal[0] =="")
+            if (RespuestaFinal[0] == "")
             {
                 RespuestaFinal[0] = txtMedicamentoAlergico.Text;
             }
@@ -176,7 +170,7 @@ namespace Saludent_Art.Vistas
         {
             try
             {
-                if(IdDatos == "" || txtMotivoConsulta.Text == "" || (RB1_SI.Checked && RB1_NO.Checked && txtMedicamentoAlergico.Text == "") ||
+                if (IdDatos == "" || txtMotivoConsulta.Text == "" || (RB1_SI.Checked && RB1_NO.Checked && txtMedicamentoAlergico.Text == "") ||
                     (RB2_SI.Checked && RB2_NO.Checked && txtIntervencionQuirurgica.Text == "") || (RB3_SI.Checked && RB3_NO.Checked && txtConsumeMedicamento.Text == "") ||
                     (RB4_SI.Checked && RB4_NO.Checked) || (RB5_SI.Checked && RB5_NO.Checked) || (RB6_SI.Checked && RB6_NO.Checked) || (RB7_SI.Checked && RB7_NO.Checked) ||
                     (RB8_SI.Checked && RB8_NO.Checked && txtOtraEnfermedad.Text == "") || (RB9_SI.Checked && RB9_NO.Checked && txtEmbarazada.Text == "") || (RB10_SI.Checked && RB10_NO.Checked) ||
@@ -197,7 +191,7 @@ namespace Saludent_Art.Vistas
                 }
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -208,7 +202,7 @@ namespace Saludent_Art.Vistas
             RadioButton[] RB_SI = { RB1_SI, RB2_SI, RB3_SI, RB4_SI, RB5_SI, RB6_SI, RB7_SI, RB8_SI, RB9_SI, RB10_SI, RB11_SI, RB12_SI, RB13_SI };
             RadioButton[] RB_NO = { RB1_NO, RB2_NO, RB3_NO, RB4_NO, RB5_NO, RB6_NO, RB7_NO, RB8_NO, RB9_NO, RB10_NO, RB11_NO, RB12_NO, RB13_NO };
             TextBox[] Text_Consultas = { txtMedicamentoAlergico, txtIntervencionQuirurgica, txtConsumeMedicamento, txtOtraEnfermedad, txtEmbarazada, txtMotivoConsulta };
-            int j=0;
+            int j = 0;
 
             for (int i = 2; i < 16; i++)
             {
@@ -221,12 +215,12 @@ namespace Saludent_Art.Vistas
                 if (consultasDataGridView.CurrentRow.Cells[i].Value.ToString() == "Si")
                 {
                     //MessageBox.Show(consultasDataGridView.CurrentRow.Cells[i].Value.ToString());
-                    RB_SI[i-2].Checked = true;
+                    RB_SI[i - 2].Checked = true;
                 }
                 else if (consultasDataGridView.CurrentRow.Cells[i].Value.ToString() == "No")
                 {
                     //MessageBox.Show(consultasDataGridView.CurrentRow.Cells[i].Value.ToString());
-                    RB_NO[i-2].Checked = true;
+                    RB_NO[i - 2].Checked = true;
                 }
                 else
                 {
@@ -289,7 +283,7 @@ namespace Saludent_Art.Vistas
 
         private void RB1_SI_CheckedChanged(object sender, EventArgs e)
         {
-           txtMedicamentoAlergico.Text = "";
+            txtMedicamentoAlergico.Text = "";
         }
 
         private void txtIntervencionQuirurgica_TextChanged(object sender, EventArgs e)

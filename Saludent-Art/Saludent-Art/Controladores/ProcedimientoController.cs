@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Saludent_Art.Modelos;
+using System;
 using System.Data;
-using Saludent_Art.Modelos;
 //using System.Windows.Forms;
 
 namespace Saludent_Art.Controladores
@@ -22,7 +18,7 @@ namespace Saludent_Art.Controladores
         {
             procedimientosguardados = procedimientoModelo.CargarProcedimientos();
             string[] procedimiento = new string[procedimientosguardados.Rows.Count];
-            for (int i=0; i<procedimientosguardados.Rows.Count; i++)
+            for (int i = 0; i < procedimientosguardados.Rows.Count; i++)
             {
                 procedimiento[i] = procedimientosguardados.Rows[i][0].ToString();
             }
@@ -31,7 +27,7 @@ namespace Saludent_Art.Controladores
         public int CalcularTotal(string[] procedimientos)
         {
             int SumaTotal = 0;
-            for(int i = 0; i <= procedimientos.Length - 1; i++)
+            for (int i = 0; i <= procedimientos.Length - 1; i++)
             {
                 precioTotal.Rows.Clear();
                 precioTotal = procedimientoModelo.CalcularTotal(procedimientos[i].ToString());

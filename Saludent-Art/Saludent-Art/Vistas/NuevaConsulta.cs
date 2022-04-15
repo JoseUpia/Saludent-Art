@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using Saludent_Art.Controladores;
+using System;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Saludent_Art.Controladores;
-
 using System.Windows.Forms;
 
 namespace Saludent_Art.Vistas
@@ -132,10 +125,10 @@ namespace Saludent_Art.Vistas
         {
             try
             {
-                if(txtIdPaciente.Text == "" || txtMotivoConsulta.Text == "" || (RB1_SI.Checked && RB1_NO.Checked && txtMedicamentoAlergico.Text == "") || 
-                    (RB2_SI.Checked && RB2_NO.Checked && txtIntervencionQuirurgica.Text == "") || (RB3_SI.Checked && RB3_NO.Checked && txtConsumeMedicamento.Text == "") || 
-                    (RB4_SI.Checked && RB4_NO.Checked) || (RB5_SI.Checked && RB5_NO.Checked) || (RB6_SI.Checked && RB6_NO.Checked) || (RB7_SI.Checked && RB7_NO.Checked) || 
-                    (RB8_SI.Checked && RB8_NO.Checked && txtOtraEnfermedad.Text == "") || (RB9_SI.Checked && RB9_NO.Checked && txtEmbarazada.Text == "") || (RB10_SI.Checked && RB10_NO.Checked) || 
+                if (txtIdPaciente.Text == "" || txtMotivoConsulta.Text == "" || (RB1_SI.Checked && RB1_NO.Checked && txtMedicamentoAlergico.Text == "") ||
+                    (RB2_SI.Checked && RB2_NO.Checked && txtIntervencionQuirurgica.Text == "") || (RB3_SI.Checked && RB3_NO.Checked && txtConsumeMedicamento.Text == "") ||
+                    (RB4_SI.Checked && RB4_NO.Checked) || (RB5_SI.Checked && RB5_NO.Checked) || (RB6_SI.Checked && RB6_NO.Checked) || (RB7_SI.Checked && RB7_NO.Checked) ||
+                    (RB8_SI.Checked && RB8_NO.Checked && txtOtraEnfermedad.Text == "") || (RB9_SI.Checked && RB9_NO.Checked && txtEmbarazada.Text == "") || (RB10_SI.Checked && RB10_NO.Checked) ||
                     (RB11_SI.Checked && RB11_NO.Checked) || (RB12_SI.Checked && RB12_NO.Checked) || (RB13_SI.Checked && RB13_NO.Checked))
                 {
                     MessageBox.Show("¡Existe algun campos vacío!", "Campos vacíos", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -151,7 +144,7 @@ namespace Saludent_Art.Vistas
                     Limpiar();
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -169,7 +162,7 @@ namespace Saludent_Art.Vistas
 
         private void txtMedicamentoAlergico_TextChanged(object sender, EventArgs e)
         {
-            if(txtMedicamentoAlergico.Text != "")
+            if (txtMedicamentoAlergico.Text != "")
             {
                 RB1_SI.Checked = false;
                 RB1_NO.Checked = false;
@@ -188,7 +181,7 @@ namespace Saludent_Art.Vistas
 
         private void txtIntervencionQuirurgica_TextChanged(object sender, EventArgs e)
         {
-            if(txtIntervencionQuirurgica.Text != "")
+            if (txtIntervencionQuirurgica.Text != "")
             {
                 RB2_SI.Checked = false;
                 RB2_NO.Checked = false;

@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Saludent_Art.Controladores;
+using System;
 using System.Windows.Forms;
-using Saludent_Art.Controladores;
 
 namespace Saludent_Art
 {
@@ -27,9 +20,9 @@ namespace Saludent_Art
         private void ListaP_Load(object sender, EventArgs e)
         {
             MostrarPacientes();
-            for(int i = 0; i<9; i++)
+            for (int i = 0; i < 9; i++)
             {
-                if(i != 7)
+                if (i != 7)
                 {
                     pacientesDataGridView.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
                 }
